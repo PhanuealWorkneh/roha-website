@@ -42,7 +42,16 @@
 	<!-- odometer CSS -->
 	<link rel="stylesheet" href="assets/css/odometer-theme-default.css" type="text/css" media="all">
 	<link rel="stylesheet" href="assets/css/scroll-up.css" type="text/css" media="all">
-
+	<style>
+		.text-roha {
+			/* font-family: 'Poppins', sans-serif; */
+			/* font-weight: 500; */
+			color: #E9F39E !important;
+		}
+		.text-roha-green{
+			color: #063232 !important; 
+		}
+	</style>
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
@@ -70,14 +79,14 @@
 		<div class="container-fluid">
 			<div class="row align-items-center">
 				<div class="col-lg-2">
-					<div class="header-logo" style="background: #0c6e6d; padding: 10px 10px;border-bottom-right-radius: 15px;width: fit-content; ">
+					<div class="header-logo" style="background: #224949d1; padding: 12px 10px;border-bottom-right-radius: 15px;width: fit-content; ">
 						<a class="active_header" href="index.html"><img src="assets/images/roha logo-01.png" alt="logo"></a>
 						<a class="active_sticky" href="index.html"><img src="assets/images/roha logo-01.png" alt="logo"></a>
 					</div>
 				</div>
 				<div class="col-lg-10">
-					<div class="header-menu justify-content-end">
-						<ul class="nav_scroll">
+					<div class="header-menu justify-content-end" style="margin-top: 10px;">
+						<ul class="nav_scroll" style="background: #224949d1; padding: 0px 10px;border-bottom-left-radius: 15px;width: fit-content;">
 							<li><a href="about.html">Medical Campus</a></li>
 							<li><a href="about.html">Our Impact</a></li>
 							<li><a href="about.html">Newsroom</a></li>
@@ -95,8 +104,8 @@
 						</ul>
 
 						<div class="col- d-none" style="width: 25px; margin-left: 15px;">
-							<div class="consalt_header-right" >
-							<!-- style="    background: #0c6e6d; padding: 11px 42px; border-radius: 5px; border: 1px solid transparent;"> -->
+							<div class="consalt_header-right">
+								<!-- style="    background: #0c6e6d; padding: 11px 42px; border-radius: 5px; border: 1px solid transparent;"> -->
 								<div class="sidebar-btn">
 									<div class="nav-btn navSidebar-button" style="margin: 0 0px 0 0;"><span><i class="bi bi-filter-left text-white"></i></span></div>
 								</div>

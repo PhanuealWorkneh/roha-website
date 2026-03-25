@@ -2,7 +2,7 @@
 <!--==================================================-->
 <!-- Start Consalt Counter Area-->
 <!--==================================================-->
-<section class="counter_area boxed">
+<section class="counter_area boxed" style="margin-top: 50px;">
 	<div class="container">
 		<div class="counter_upper">
 			<div class="row align-items-center">
@@ -23,11 +23,11 @@
 				<div class="counter-single-item">
 					<div class="counter-content none">
 						<div class="counter-_number">
-							<h1 class="counter">12</h1>
-							<span>K+</span>							
+							<h1 class="counter">4</h1>
+							<span></span>							
 						</div>
 						<div class="counter_title">
-							<h5>total Projects <br>Complated</h5>
+							<h5>UPCOMING SPECIALIZED <br/>CENTERS OF EXCELLENCE</h5>
 						</div>
 					</div>
 				</div>
@@ -49,11 +49,11 @@
 				<div class="counter-single-item">
 					<div class="counter-content">
 						<div class="counter-_number">
-							<h1 class="counter">4.7</h1>
+							<h1 class="counter">2</h1>
 							<span>*</span>							
 						</div>
 						<div class="counter_title">
-							<h5>AVERAGE CLIENTS <br>RATINGS</h5>
+							<h5>GOLD-STANDARD <br/>ACCREDITATIONS</h5>
 						</div>
 					</div>
 				</div>

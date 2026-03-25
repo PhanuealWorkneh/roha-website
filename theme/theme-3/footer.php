@@ -8,7 +8,7 @@
 				<div class="footer_logo">
 					<a href="index.html"><img src="assets/images/roha logo-01.png" alt=""></a>
 				</div>
-				<p class="footer_desc">Continually plagiarize virtual web service pro with home_one maximizing action</p>
+				<p class="footer_desc">Roha Medical Campus is a state-of-the-art medical facility dedicated to providing exceptional healthcare services.</p>
 				<form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
 					<div class="subscribe_form">
 						<input type="email" name="email" id="email" class="form-control" required="" data-error="Please enter your email" placeholder="Your E-Mail">

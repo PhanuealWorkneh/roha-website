@@ -6,6 +6,7 @@ require ("hero.php") ;
 require ("scroll.php") ;
 require ("about-home.php") ;
 require ("stats.php") ;
+require ("cta-home.php"); 
 require ("blogs-home.php") ;
 ?>
 

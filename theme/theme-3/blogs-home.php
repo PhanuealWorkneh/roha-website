@@ -2,7 +2,7 @@
 <!--==================================================-->
 <!-- Start Consalt Blog Area style Two-->
 <!--==================================================-->
-<section class="blog_area style_two style_five style_sixs boxed">
+<section class="blog_area style_two style_five style_sixs boxed" style="background-color: #e9ebed;">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
