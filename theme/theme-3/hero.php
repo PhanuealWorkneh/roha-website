@@ -94,12 +94,16 @@
                         Roha Medical Campus is an integrated health campus under development in the heart of Addis Ababa, Ethiopia.
                     </p>
                 </div>
+                
                 <div class="ms-2 rounded-circle d-flex align-items-center justify-content-center" 
-                             style="background-color: #E9F39E; width: 56px; height: 56px; color: black;">
+                             style="background-color: #E9F39E; width: 56px; height: 56px; color: black;  pointer-events: none;">
+                             <a href="medical-campus.php">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
+                             </a>
                         </div>
+            
             </div>
         </div>
     </div>

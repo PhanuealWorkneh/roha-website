@@ -601,3 +601,55 @@
 </section>
 <!--==================================================-->
 <!-- End Consalt Team Area style Five-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--==================================================-->
+<!-- Start Consalt Call Area -->
+<!--==================================================-->
+<section class="call_area style_three">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-4 col-md-6">
+				<div class="call-do-action-info">
+					<div class="call-do-social_icon">
+						<i class="fas fa-phone-alt"></i>
+					</div>
+					<div class="call_info">
+						<p>Say Hello</p>
+						<h3>example@gmail.com</h3>
+					</div>
+				</div>		
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="footer_logo">
+					<a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="call_social_icon">
+					<ul>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a class="top-social-icon-left" href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+<!--==================================================-->
+<!-- End Consalt Call Area -->
+<!--==================================================-->

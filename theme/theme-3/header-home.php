@@ -58,7 +58,7 @@
 
 <body>
 
-<!--========= Prealoader ==============-->
+	<!--========= Prealoader ==============-->
 	<div class="loading-screen" id="loading-screen">
 		<span class="bar top-bar"></span>
 		<span class="bar down-bar"></span>
@@ -70,12 +70,14 @@
 	</div>
 	<!--========= End Prealoader ==============-->
 
-<!--==================================================-->
-<!-- Start Consalt Header Area Style Three-->
-<!--==================================================-->
-<div class="consalt-header-area style_two style_three inner_page" id="sticky-header" >
-	<div class="container-fluid">
-		<div class="row align-items-center">
+
+	<!--==================================================-->
+	<!-- Start Consalt Header Area Style Sixs-->
+	<!--==================================================-->
+	<!-- linear-gradient(135deg, #2b6aa3 0%, #1f7f9a 50%, #0f8f87 100%); -->
+	<div class="consalt-header-area style_two style_three style_sixs" id="sticky-header" style="background: transparent !important; box-shadow: none; webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none;">
+		<div class="container-fluid">
+			<div class="row align-items-center">
 				<div class="col-lg-2">
 					<div class="header-logo" style="background: #224949d1; padding: 12px 10px;border-bottom-right-radius: 15px;width: fit-content; ">
 						<a class="active_header" href="./"><img src="assets/images/roha logo-01.png" alt="logo"></a>
@@ -84,7 +86,7 @@
 				</div>
 				<div class="col-lg-10">
 					<div class="header-menu justify-content-end" style="margin-top: 10px;">
-						<ul class="nav_scroll" style="background: #224949d1; padding: 0px 10px;border-bottom-left-radius: 15px;width: fit-content;">
+						<ul class="nav_scroll" style="background: #224949d1; padding: 0px 10px;border-bottom-left-radius: 15px;width: fit-content; pointer-events: none;">
 							<li><a href="medical-campus.php">Medical Campus</a></li>
 							<li><a href="our-impact.php">Our Impact</a></li>
 							<li><a href="newsroom.php">Newsroom</a></li>
@@ -112,18 +114,17 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
-</div>
-<!--==================================================-->
-<!-- End Consalt Header Area -->
-<!--==================================================-->
+	<!--==================================================-->
+	<!-- End Consalt Header Area -->
+	<!--==================================================-->
 
-<!--========= Start Mobile Memu========== -->
-
-<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
-	<div class="mobile-menu">
-		<nav class="header-menu">
-			<ul class="nav_scroll">
+	<!--========= Start Mobile Memu========== -->
+	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+		<div class="mobile-menu">
+			<nav class="header-menu">
+				<ul class="nav_scroll">
 					<li><a href="medical-campus.php">Medical Campus</a></li>
 					<li><a href="our-impact.php">Our Impact</a></li>
 					<li><a href="newsroom.php">Newsroom<span><i class="fas fa-angle-down"></i></span></a>
@@ -138,73 +139,70 @@
 						<a href="contact.php">Contact Us</a>
 					</div>
 				</ul>
-		</nav>
+			</nav>
+		</div>
 	</div>
-</div>
-<!--========= End Mobile Memu========== -->
+	<!--========= End Mobile Memu========== -->
 
-
-
-<!-- Sidebar Cart Item -->
-<div class="xs-sidebar-group info-group">
-	<div class="xs-overlay xs-bg-black"></div>
-	<div class="xs-sidebar-widget">
-		<div class="sidebar-widget-container">
-			<div class="widget-heading">
-				<a href="#" class="close-side-widget">
-					<i class="far fa-times-circle"></i>
-				</a>
-			</div>
-			<div class="sidebar-textwidget">
-				<!-- Sidebar Info Content -->
-				<div class="sidebar-info-contents">
-					<div class="content-inner">
-						<div class="nav-logo">
-							<a href="index.html"><img src="assets/images/logo.png" alt="sid img" ></a>
-						</div>
-						<div class="row padding-two">
-							<div class="col-lg-6">
-								<div class="content-thumb-box">
-									<img src="assets/images/home_one/team.jpg" alt="">
+	<!-- Sidebar Cart Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black"></div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget">
+						<i class="far fa-times-circle"></i>
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+					<!-- Sidebar Info Content -->
+					<div class="sidebar-info-contents">
+						<div class="content-inner">
+							<div class="nav-logo">
+								<a href="index.php"><img src="assets/images/logo.png" alt="sid img"></a>
+							</div>
+							<div class="row padding-two">
+								<div class="col-lg-6">
+									<div class="content-thumb-box">
+										<img src="assets/images/home_one/team.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6 ">
+									<div class="content-thumb-box">
+										<img src="assets/images/home_one/team1.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6 ">
+									<div class="content-thumb-box">
+										<img src="assets/images/home_one/team2.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6 ">
+									<div class="content-thumb-box">
+										<img src="assets/images/home_one/team.jpg" alt="">
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-6 ">
-								<div class="content-thumb-box">
-									<img src="assets/images/home_one/team1.jpg" alt="">
-								</div>
+							<div class="contact-info">
+								<h2>Contact Info</h2>
+								<ul class="list-style-one">
+									<li><i class="bi bi-envelope"></i>Chicago 12, Melborne City, USA</li>
+									<li><i class="bi bi-envelope"></i>(+001) 123-456-7890</li>
+									<li><i class="bi bi-envelope"></i>Example.com</li>
+									<li><i class="bi bi-envelope"></i>Week Days: 09.00 to 18.00 Sunday: Closed</li>
+								</ul>
 							</div>
-							<div class="col-lg-6 ">
-								<div class="content-thumb-box">
-									<img src="assets/images/home_one/team2.jpg" alt="">
-								</div>
-							</div>
-							<div class="col-lg-6 ">
-								<div class="content-thumb-box">
-									<img src="assets/images/home_one/team.jpg" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="contact-info">
-							<h2>Contact Info</h2>
-							<ul class="list-style-one">
-								<li><i class="bi bi-envelope"></i>Chicago 12, Melborne City, USA</li>
-								<li><i class="bi bi-envelope"></i>(+001) 123-456-7890</li>
-								<li><i class="bi bi-envelope"></i>Example.com</li>
-								<li><i class="bi bi-envelope"></i>Week Days: 09.00 to 18.00 Sunday: Closed</li>
+							<!-- Social Box -->
+							<ul class="social-box">
+								<li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
+								<li class="twitter"><a href="#" class="fab fa-instagram"></a></li>
+								<li class="linkedin"><a href="#" class="fab fa-twitter"></a></li>
+								<li class="instagram"><a href="#" class="fab fa-pinterest-p"></a></li>
+								<li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li>
 							</ul>
 						</div>
-						<!-- Social Box -->
-						<ul class="social-box">
-							<li class="facebook"><a href="#" class="fab fa-facebook-f"></a></li>
-							<li class="twitter"><a href="#" class="fab fa-instagram"></a></li>
-							<li class="linkedin"><a href="#" class="fab fa-twitter"></a></li>
-							<li class="instagram"><a href="#" class="fab fa-pinterest-p"></a></li>
-							<li class="youtube"><a href="#" class="fab fa-linkedin-in"></a></li>
-						</ul>
 					</div>
-				</div>		
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-

@@ -1,22 +1,7 @@
-<style>
-button.btn {
-    width: 119px;
-    height: 36px;
-    border-radius: 18px;
-    background-color: #0c6e6d;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-</style>
 <!--==================================================-->
-<!-- Start Consalt Footer Area -->
+<!-- Start Consalt Footer Area Style Five -->
 <!--==================================================-->
-<section class="footer_area style_two">
+<section class="footer_area style_sixs boxed" style="margin-top: 0px;">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-6">
@@ -129,18 +114,12 @@ button.btn {
 			</div>
 		</div>
 	</div>
-	<div class="footer_all_shape">
-		<div class="footer_shape_one dance">
-			<img src="assets/images/home_3/choose_rotete.png" alt="">
-		</div>
-		<div class="footer_shape_two bounce-animate">
-			<img src="assets/images/home_3/footer_shape.png" alt="">
-		</div>
-	</div>
+
 </section>
 <!--==================================================-->
-<!-- End Consalt Footer Area-->
+<!-- End Consalt Footer Area Style Five-->
 <!--==================================================-->
+
 
 <!--==================================================-->
 <!-- Start Search Popup Section -->
@@ -159,51 +138,83 @@ button.btn {
 <!-- Start Search Popup Section -->
 <!--==================================================-->
 
+
 <!--==================================================-->
 <!-- Start Consalt Scroll Up-->
 <!--==================================================-->
 <div class="prgoress_indicator active-progress">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.78;"></path>
-        </svg>
- </div>
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.78;"></path>
+	</svg>
+</div>
 <!--==================================================-->
 <!-- End Consalt Scroll Up-->
 <!--==================================================-->
 
-	<!-- jquery js -->
-	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
-	<!-- bootstrap js -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- carousel js -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!-- counterup js -->
-	<script src="assets/js/jquery.counterup.min.js"></script>
-	<!-- waypoints js -->
-	<script src="assets/js/waypoints.min.js"></script>
-	<!-- wow js -->
-	<script src="assets/js/wow.js"></script>
-	<!-- imagesloaded js -->
-	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<!-- venobox js -->
-	<script src="venobox/venobox.js"></script>
+<!-- jquery js -->
+<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- carousel js -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- counterup js -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- waypoints js -->
+<script src="assets/js/waypoints.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.js"></script>
+<!-- imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- venobox js -->
+<script src="venobox/venobox.js"></script>
+<!--  animated-text js -->
+<script src="assets/js/animated-text.js"></script>
+<!-- venobox min js -->
+<script src="venobox/venobox.min.js"></script>
+<!-- isotope js -->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<!-- jquery meanmenu js -->
+<script src="assets/js/jquery.meanmenu.js"></script>
+<!-- jquery scrollup js -->
+<script src="assets/js/jquery.scrollUp.js"></script>
+<!-- theme js -->
+<script src="assets/js/theme.js"></script>
+<!-- barfiller -->
+<script src="assets/js/jquery.barfiller.js"></script>
+<script src="assets/js/swiper-bundle.js"></script>
+<script src="assets/js/magnific-popup-js"></script>
+<script src="assets/js/custom.js"></script>
 
-	<!--  animated-text js -->
-	<script src="assets/js/animated-text.js"></script>
-	<!-- venobox min js -->
-	<script src="venobox/venobox.min.js"></script>
-	<!-- isotope js -->
-	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<!-- jquery meanmenu js -->
-	<script src="assets/js/jquery.meanmenu.js"></script>
 
-	<!-- jquery scrollup js -->
-	<script src="assets/js/jquery.scrollUp.js"></script>
-	<!-- theme js -->
-	<script src="assets/js/theme.js"></script>
-	<!-- barfiller -->
-	<script src="assets/js/jquery.barfiller.js"></script>
+<script>
+//   const hero = document.getElementById('scrollHero');
+//   const texts = document.querySelectorAll('.hero-text');
+
+//   function updateScrollHero() {
+//     const rect = hero.getBoundingClientRect();
+//     const windowHeight = window.innerHeight;
+//     const scrollable = hero.offsetHeight - windowHeight;
+
+//     let progress = -rect.top / scrollable;
+//     progress = Math.max(0, Math.min(1, progress));
+
+//     texts.forEach(text => text.classList.remove('active'));
+
+//     if (progress >= 0 && progress < 0.33) {
+//       texts[0].classList.add('active');
+//     } else if (progress >= 0.33 && progress < 0.66) {
+//       texts[1].classList.add('active');
+//     } else {
+//       texts[2].classList.add('active');
+//     }
+//   }
+
+//   window.addEventListener('scroll', updateScrollHero);
+//   window.addEventListener('load', updateScrollHero);
+//   window.addEventListener('resize', updateScrollHero);
+</script>
 
 </body>
+
 </html>
