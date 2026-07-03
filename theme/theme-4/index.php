@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roha Medical Campus — A New Chapter for Healthcare in Africa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;1,8..144,100;1,8..144,300;1,8..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+  :root {
+    --forest:       #0a3d2b;
+    --forest-mid:   #0f5c3e;
+    --forest-light: #1a7a52;
+    --sage:         #7aad8c;
+    --sage-light:   #c2dfc9;
+    --cream:        #f5f0e8;
+    --cream-dark:   #ede7d9;
+    --warm-white:   #faf8f4;
+    --gold:         #c9a84c;
+    --gold-light:   #e8d4a0;
+    --charcoal:     #1a1a18;
+    --text-mid:     #4a4a46;
+    --text-muted:   #8a8a84;
+    --section-pad:  clamp(5rem, 10vw, 9rem);
+    --green:        #1a7a4a;
+    --gl:           #4ade80;
+    --pl:           #a855f7;
+    --black:        #080a0e;
+    --white:        #f0f4f0;
+    --muted:        rgba(240,244,240,0.5);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Roboto Serif', Georgia, serif;
+    font-weight: 300;
+    font-size: 17px;
+    background: var(--warm-white);
+    color: var(--charcoal);
+    overflow-x: hidden;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* --- TYPOGRAPHY SYSTEM --- */
+  h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+  .serif-display {
+    font-family: 'Roboto Serif', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  /* ========== NAVBAR ========== */
+  .navbar {
+    position: fixed; top:0; left:0; width:100%; height:72px;
+    background: rgba(10,47,34,0.97);
+    display: flex; align-items:center; justify-content:space-between;
+    padding: 0 48px;
+    z-index: 1000;
+    transition: all 0.35s ease;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .navbar.scrolled {
+    background: rgba(8,37,26,0.98);
+    backdrop-filter: blur(16px);
+    height: 62px;
+    box-shadow: 0 2px 32px rgba(0,0,0,0.18);
+  }
+  .logo {
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+  .logo span { color: var(--gold); font-weight: 300; font-style: italic; font-family: 'Roboto Serif', serif; }
+  .right-nav { display:flex; align-items:center; gap:20px; }
+  .nav-links {
+    display: flex; align-items: center; gap: 28px;
+    max-width: 0; opacity: 0; overflow: hidden; white-space: nowrap;
+    transition: max-width 0.55s cubic-bezier(0.2, 0.9, 0.4, 1.1), opacity 0.35s ease;
+  }
+  .nav-links.active { max-width: 650px; opacity: 1; }
+  .nav-links a {
+    color: rgba(255,255,255,0.88);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    transition: color 0.25s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content:''; position:absolute; bottom:-4px; left:0;
+    width:0; height:2px; background:var(--gold);
+    transition: width 0.3s ease;
+  }
+  .nav-links a:hover::after, .nav-links a.active::after { width:100%; }
+  .nav-links a:hover { color: var(--gold); }
+  .icon-btn, .menu-toggle-btn {
+    background:none; border:none; color:white;
+    font-size:1.25rem; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition: color 0.2s;
+  }
+  .icon-btn:hover, .menu-toggle-btn:hover { color: var(--gold); }
+  .menu-toggle-btn { font-size:1.8rem; }
+  .expand-menu-btn {
+    background:none; border:none; color:white;
+    font-size:1.1rem; cursor:pointer;
+    display:flex; align-items:center; gap:6px;
+    transition: color 0.2s;
+    font-family: 'Poppins', sans-serif;
+  }
+  .expand-menu-btn:hover { color: var(--gold); }
+  @media (max-width:800px) {
+    .navbar { padding: 0 20px; }
+    .nav-links.active { max-width: 420px; }
+    .nav-links a { font-size:0.65rem; }
+    .logo { font-size:1rem; }
+  }
+
+  /* ========== SIDEBAR ========== */
+  .sidebar-offcanvas {
+    position:fixed; top:0; right:-100%; width:340px; height:100vh;
+    background: var(--forest); z-index:1100;
+    transition: right 0.4s ease-in-out;
+    box-shadow: -8px 0 40px rgba(0,0,0,0.3);
+    padding: 2rem 1.6rem;
+    display:flex; flex-direction:column; overflow-y:auto;
+  }
+  .sidebar-offcanvas.open { right:0; }
+  .sidebar-overlay {
+    position:fixed; top:0; left:0; width:100%; height:100%;
+    background: rgba(0,0,0,0.55); z-index:1050;
+    visibility:hidden; opacity:0; transition:0.3s ease;
+  }
+  .sidebar-overlay.active { visibility:visible; opacity:1; }
+  .sidebar-header {
+    display:flex; justify-content:space-between; align-items:center;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding-bottom: 1rem; margin-bottom: 2rem;
+  }
+  .sidebar-header h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--gold); font-size:1.1rem; font-weight:700;
+    letter-spacing:-0.01em; margin:0;
+  }
+  .close-sidebar {
+    background:none; border:none; color:white;
+    font-size:1.8rem; cursor:pointer; transition:0.2s;
+    line-height:1;
+  }
+  .close-sidebar:hover { color:var(--gold); transform:rotate(90deg); }
+  .sidebar-menu { list-style:none; padding:0; }
+  .sidebar-menu li { margin-bottom:0.5rem; }
+  .sidebar-menu a {
+    color: rgba(255,255,255,0.75);
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+    font-size:0.85rem; font-weight:500;
+    display:flex; align-items:center; gap:14px;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,0.07);
+    transition: all 0.2s;
+  }
+  .sidebar-menu a i { width:26px; color:var(--sage); }
+  .sidebar-menu a:hover { color:var(--gold); padding-left:8px; }
+  .sidebar-contact {
+    margin-top:auto; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1);
+    font-family:'Roboto Serif',serif; font-size:0.8rem; color:rgba(255,255,255,0.55);
+  }
+  .sidebar-contact p { margin-bottom:0.5rem; }
+  .sidebar-contact i { width:22px; color:var(--gold); margin-right:8px; }
+  .social-sidebar { display:flex; gap:1rem; margin-top:1rem; }
+  .social-sidebar a { color:rgba(255,255,255,0.55); transition:0.2s; font-size:1.1rem; }
+  .social-sidebar a:hover { color:var(--gold); }
+
+  /* ========== HERO ========== */
+  .h-hero-wrapper {
+    position:relative; height:100vh; width:100%;
+    overflow:hidden; background:var(--black);
+  }
+  .h-hero-slider { width:100%; height:100%; position:relative; overflow:hidden; }
+  .h-hero-track {
+    display:flex; width:400%; height:100%;
+    transition: transform 0.75s cubic-bezier(0.25,0.46,0.45,0.94);
+    will-change: transform;
+  }
+  .h-hero-slide {
+    width:25%; height:100%; flex-shrink:0;
+    display:flex; align-items:center;
+    position:relative; overflow:hidden;
+    padding: 0 clamp(32px, 8vw, 100px);
+  }
+  /* Slide backgrounds with grain overlay */
+  .h-hero-slide::before {
+    content:''; position:absolute; inset:0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events:none; z-index:1; opacity:0.5;
+  }
+  .slide-bg-0 { background: radial-gradient(ellipse 80% 60% at 65% 45%, #1e7a50 0%, #0a3d26 40%, #080a0e 100%); }
+  .slide-bg-0::after {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse 35% 50% at 5% 65%, rgba(110,20,160,.35) 0%, transparent 65%);
+    pointer-events:none; z-index:0;
+  }
+  .slide-bg-1 { background: radial-gradient(ellipse 70% 60% at 55% 50%, #0f4d2e 0%, #060f0a 55%, #080a0e 100%); }
+  .slide-bg-2 { background: radial-gradient(ellipse 75% 70% at 30% 55%, #1a0940 0%, #0a0616 60%, #080a0e 100%); }
+  .slide-bg-2::after {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse 40% 50% at 80% 30%, rgba(20,100,55,.22) 0%, transparent 60%);
+    pointer-events:none; z-index:0;
+  }
+  .slide-bg-3 { background: radial-gradient(ellipse 70% 65% at 60% 45%, #1a4d30 0%, #080e0a 55%, #080a0e 100%); }
+  .slide-bg-3::after {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse 40% 60% at 10% 40%, rgba(100,15,170,.28) 0%, transparent 65%);
+    pointer-events:none; z-index:0;
+  }
+
+  .hero-slide-content {
+    max-width: 800px; position:relative; z-index:2;
+  }
+  .hero-chapter {
+    display: inline-flex; align-items:center; gap:14px;
+    margin-bottom: 2.2rem;
+  }
+  .hero-chapter-line { width:40px; height:1px; background:rgba(255,255,255,0.2); }
+  .hero-chapter-badge {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px; font-weight: 600;
+    letter-spacing: 3px; text-transform:uppercase;
+    color: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px; padding: 4px 14px;
+  }
+  .hero-slide-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 4.2vw, 4rem);
+    line-height: 1.08;
+    margin-bottom: 1.4rem;
+    letter-spacing: -0.03em;
+    color: white;
+  }
+  .hero-slide-content h1 em {
+    font-style: normal;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gl);
+  }
+  .hero-sub {
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.02em;
+    display: flex; align-items:center; gap:12px;
+    margin-top: 0.5rem;
+  }
+  .hero-sub::before { content:''; width:20px; height:1px; background:rgba(255,255,255,0.3); }
+
+  .hero-deco-num {
+    position:absolute; right:-20px; bottom:-40px;
+    font-size:28vw; font-weight:800; line-height:1;
+    color:rgba(255,255,255,0.015);
+    pointer-events:none; user-select:none;
+    letter-spacing:-10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .hero-s-in { opacity:0; transform:translateX(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .hero-s-in.d1 { transition-delay:.1s; }
+  .hero-s-in.d2 { transition-delay:.22s; }
+  .hero-s-in.d3 { transition-delay:.34s; }
+  .h-hero-slide.active .hero-s-in { opacity:1; transform:translateX(0); }
+
+  /* Arrow animations */
+  .arr-row { display:flex; gap:4px; }
+  .arr-row span { display:block; width:6px; height:6px; border-right:2px solid var(--muted); border-bottom:2px solid var(--muted); transform:rotate(-45deg); animation:aBounce 1.4s ease-in-out infinite; }
+  .arr-row span:nth-child(2) { animation-delay:.15s; opacity:.6; }
+  .arr-row span:nth-child(3) { animation-delay:.3s; opacity:.35; }
+  @keyframes aBounce { 0%,100%{transform:rotate(-45deg) translate(0,0); opacity:1;} 50%{transform:rotate(-45deg) translate(4px,4px); opacity:.4;} }
+  .arr-down { display:flex; flex-direction:column; align-items:center; gap:4px; }
+  .arr-down span { display:block; width:6px; height:6px; border-right:2px solid var(--gl); border-bottom:2px solid var(--gl); transform:rotate(45deg); animation:aBounceD 1.4s ease-in-out infinite; }
+  .arr-down span:nth-child(2) { animation-delay:.15s; opacity:.6; }
+  .arr-down span:nth-child(3) { animation-delay:.3s; opacity:.35; }
+  @keyframes aBounceD { 0%,100%{transform:rotate(45deg) translate(0,0); opacity:1;} 50%{transform:rotate(45deg) translate(0,4px); opacity:.4;} }
+
+  .hero-scroll-arrow {
+    position:absolute; right:clamp(24px,5vw,52px); bottom:44px;
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+    color:var(--muted); font-family:'Poppins',sans-serif; font-size:9px;
+    letter-spacing:2px; text-transform:uppercase; z-index:10;
+  }
+  .hero-down-hint {
+    position:absolute; right:clamp(24px,5vw,52px); bottom:80px;
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+    color:var(--gl); font-family:'Poppins',sans-serif; font-size:9px;
+    letter-spacing:2px; text-transform:uppercase;
+    cursor:pointer; z-index:15; transition: opacity 0.3s;
+  }
+  .hero-down-hint:hover { opacity:0.7; }
+
+  /* Hero Timeline */
+  .hero-timeline {
+    position:fixed; bottom:0; left:0; right:0; z-index:600;
+    padding: 0 clamp(24px,5vw,52px) 28px;
+    background: linear-gradient(to top, rgba(8,10,14,.85) 0%, transparent 100%);
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    opacity:1; visibility:visible;
+  }
+  .hero-timeline.hidden { opacity:0; visibility:hidden; pointer-events:none; }
+  .hero-tl-track {
+    position:relative; display:flex; align-items:center;
+    height:2px; background:rgba(255,255,255,.08); border-radius:2px;
+  }
+  .hero-tl-fill {
+    height:2px; border-radius:2px;
+    background: linear-gradient(90deg, var(--green), var(--pl));
+    transition: width 0.5s cubic-bezier(0.77,0,0.175,1);
+    position:absolute; left:0; top:0;
+  }
+  .hero-tl-dots {
+    position:absolute; top:50%; transform:translateY(-50%);
+    left:0; right:0; display:flex; justify-content:space-between;
+  }
+  .hero-tl-dot {
+    width:10px; height:10px; border-radius:50%;
+    background:rgba(255,255,255,.12); border:2px solid rgba(255,255,255,.18);
+    cursor:pointer; transition: background .4s, border-color .4s, transform .3s;
+    position:relative;
+  }
+  .hero-tl-dot.reached { background:var(--gl); border-color:var(--gl); }
+  .hero-tl-dot.active { transform:scale(1.5); box-shadow:0 0 0 4px rgba(74,222,128,.18); }
+  .dot-label {
+    position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
+    font-family:'Poppins',sans-serif; font-size:9px; letter-spacing:1.5px;
+    text-transform:uppercase; color:var(--muted); white-space:nowrap;
+    pointer-events:none; opacity:0; transition:opacity .2s;
+  }
+  .hero-tl-dot.active .dot-label, .hero-tl-dot:hover .dot-label { opacity:1; }
+
+  /* ========== STATS BAR ========== */
+  .stats-bar {
+    background: var(--forest);
+    padding: clamp(1.5rem,4vw,2.5rem) clamp(2rem,6vw,5rem);
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+  }
+  .stat-item {
+    text-align:center; padding:clamp(1rem,3vw,2rem) 1.5rem;
+    border-right:1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right:none; }
+  .stat-number {
+    display:block;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.5rem,5vw,3.8rem);
+    font-weight: 700; color: var(--gold); line-height:1;
+    letter-spacing:-0.03em;
+  }
+  .stat-label {
+    display:block; margin-top:0.5rem;
+    font-family:'Poppins',sans-serif;
+    font-size:0.65rem; font-weight:600;
+    letter-spacing:0.18em; text-transform:uppercase;
+    color:rgba(255,255,255,0.45);
+  }
+
+  /* ========== SECTION SYSTEM ========== */
+  section { padding: var(--section-pad) clamp(2rem,8vw,5rem); }
+
+  .section-eyebrow {
+    display:inline-flex; align-items:center; gap:0.8rem;
+    font-family:'Poppins',sans-serif;
+    font-size:0.65rem; font-weight:700;
+    letter-spacing:0.22em; text-transform:uppercase;
+    color: var(--forest-light); margin-bottom:1.4rem;
+  }
+  .section-eyebrow::before { content:''; width:2.5rem; height:2px; background:var(--forest-light); border-radius:2px; }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2rem,4vw,3.6rem);
+    font-weight: 700; line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+  h2 em {
+    font-style: italic;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 300;
+    color: var(--forest-light);
+  }
+  .lead {
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.05rem; font-weight: 300; line-height:1.9;
+    color: var(--text-mid); max-width: 580px; margin-top:1.2rem;
+  }
+
+  /* ========== NARRATIVE PULL QUOTE ========== */
+  .pull-quote {
+    font-family: 'Roboto Serif', serif;
+    font-size: clamp(1.3rem,2.5vw,1.9rem);
+    font-weight: 300; font-style: italic;
+    line-height: 1.55; color: var(--forest);
+    border-left: 3px solid var(--gold);
+    padding-left: 1.8rem;
+    margin: 2.5rem 0;
+  }
+
+  /* ========== MISSION ========== */
+  .mission { background: var(--warm-white); }
+  .mission-inner { display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem,8vw,7rem); align-items:center; }
+  .mission-text-body {
+    font-family: 'Roboto Serif', serif;
+    font-size:1.05rem; line-height:1.9; color:var(--text-mid);
+    margin-top:1.2rem;
+  }
+  .mission-visual { position:relative; height:480px; }
+  .mission-card.large {
+    position:absolute; top:0; left:0; width:78%; height:72%;
+    background: var(--forest); padding:2.5rem;
+    display:flex; align-items:flex-end;
+  }
+  .mission-card.large blockquote {
+    font-family:'Roboto Serif',serif; font-size:1.35rem;
+    font-style:italic; font-weight:300; color:white; line-height:1.6;
+  }
+  .mission-card.accent {
+    position:absolute; bottom:0; right:0; width:52%;
+    background:var(--cream); padding:1.8rem;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+  }
+  .mission-card.accent span {
+    font-family:'Poppins',sans-serif; font-size:3rem; font-weight:700;
+    color:var(--forest); letter-spacing:-0.04em; line-height:1;
+  }
+  .mission-card.accent p {
+    font-family:'Roboto Serif',serif; font-size:0.85rem;
+    color:var(--text-mid); margin-top:0.5rem; line-height:1.6;
+  }
+  .mission-pill {
+    position:absolute; top:52%; right:-1.2rem;
+    background:var(--gold); color:var(--forest);
+    padding:0.5rem 1.1rem;
+    font-family:'Poppins',sans-serif; font-size:0.65rem;
+    font-weight:700; text-transform:uppercase; letter-spacing:0.1em;
+  }
+  .btn-primary {
+    display: inline-flex; align-items:center; gap:8px;
+    font-family:'Poppins',sans-serif; font-size:0.75rem; font-weight:700;
+    letter-spacing:0.12em; text-transform:uppercase;
+    text-decoration:none;
+    background: var(--forest); color:white;
+    padding: 0.85rem 1.8rem;
+    border:2px solid var(--forest);
+    transition: all 0.25s;
+    margin-top:2rem;
+  }
+  .btn-primary:hover { background:transparent; color:var(--forest); }
+
+  /* ========== NARRATIVE CHAPTER BREAK ========== */
+  .chapter-break {
+    padding: clamp(3rem,6vw,5rem) clamp(2rem,8vw,5rem);
+    background: var(--cream);
+    border-top: 1px solid var(--cream-dark);
+    border-bottom: 1px solid var(--cream-dark);
+    display:flex; align-items:center; gap:3rem;
+    overflow:hidden;
+  }
+  .chapter-break-number {
+    font-family:'Poppins',sans-serif; font-size:clamp(4rem,10vw,8rem);
+    font-weight:800; color:var(--cream-dark);
+    letter-spacing:-0.04em; line-height:1;
+    flex-shrink:0;
+  }
+  .chapter-break-text {}
+  .chapter-break-label {
+    font-family:'Poppins',sans-serif; font-size:0.65rem;
+    font-weight:700; letter-spacing:0.22em;
+    text-transform:uppercase; color:var(--text-muted);
+    margin-bottom:0.6rem;
+  }
+  .chapter-break-title {
+    font-family:'Poppins',sans-serif; font-size:clamp(1.3rem,2.5vw,2rem);
+    font-weight:700; color:var(--charcoal); line-height:1.2;
+    letter-spacing:-0.02em;
+  }
+  .chapter-break-title em {
+    font-style:italic; font-family:'Roboto Serif',serif;
+    font-weight:300; color:var(--forest-light);
+  }
+
+  /* ========== BUILDING / FEATURES ========== */
+  .building { background: var(--warm-white); }
+  .features-grid {
+    display:grid; grid-template-columns:repeat(3,1fr);
+    border:1px solid var(--cream-dark);
+    margin-top:3rem; overflow:hidden;
+  }
+  .feature-cell {
+    padding:2.2rem; border-right:1px solid var(--cream-dark);
+    border-bottom:1px solid var(--cream-dark);
+    transition: background 0.35s, transform 0.35s;
+    position:relative; overflow:hidden;
+  }
+  .feature-cell:hover { background:var(--forest); transform:none; }
+  .feature-cell:hover h3, .feature-cell:hover p { color:white; }
+  .feature-icon {
+    width:46px; height:46px;
+    background:var(--forest); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:1.2rem; font-size:1.2rem;
+    transition: background 0.35s;
+  }
+  .feature-cell:hover .feature-icon { background:rgba(255,255,255,0.15); }
+  .feature-cell h3 {
+    font-family:'Poppins',sans-serif; font-size:0.95rem;
+    font-weight:600; letter-spacing:-0.01em; margin-bottom:0.6rem;
+    transition: color 0.35s;
+  }
+  .feature-cell p {
+    font-family:'Roboto Serif',serif; font-size:0.9rem;
+    font-weight:300; color:var(--text-mid); line-height:1.75;
+    transition: color 0.35s;
+  }
+
+  /* ========== ESG ========== */
+  .esg { background:var(--forest); color:white; }
+  .esg-inner { display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem,7vw,5rem); align-items:start; }
+  .esg .section-eyebrow { color:var(--sage-light); }
+  .esg .section-eyebrow::before { background:var(--sage-light); }
+  .esg h2 em { color:var(--sage); }
+  .esg .lead { color:rgba(255,255,255,0.62); font-family:'Roboto Serif',serif; }
+  .esg-pillars { margin-top:2.5rem; }
+  .esg-pillar {
+    padding:1.4rem 0; border-bottom:1px solid rgba(255,255,255,0.09);
+    display:flex; gap:1.4rem; align-items:flex-start;
+  }
+  .pillar-num {
+    font-family:'Poppins',sans-serif; font-size:1.2rem; font-weight:800;
+    color:var(--sage); letter-spacing:-0.02em; min-width:28px;
+    padding-top:2px;
+  }
+  .esg-pillar h4 {
+    font-family:'Poppins',sans-serif; font-size:0.85rem;
+    font-weight:700; letter-spacing:0.02em; color:white;
+    margin-bottom:0.3rem;
+  }
+  .esg-pillar p {
+    font-family:'Roboto Serif',serif; font-size:0.9rem;
+    font-weight:300; color:rgba(255,255,255,0.6); line-height:1.7;
+  }
+  .esg-forest-card {
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:2.5rem; position:relative; overflow:hidden;
+    margin-top:2rem;
+  }
+  .esg-forest-card::before {
+    content:''; position:absolute; inset:0;
+    background: radial-gradient(ellipse 80% 80% at 80% 80%, rgba(74,222,128,0.08), transparent);
+    pointer-events:none;
+  }
+  .tree-count {
+    font-family:'Poppins',sans-serif; font-size:clamp(3rem,6vw,4.5rem);
+    font-weight:800; color:var(--gold); letter-spacing:-0.04em; line-height:1;
+    display:block;
+  }
+  .esg-forest-card h3 {
+    font-family:'Poppins',sans-serif; font-size:1rem; font-weight:600;
+    color:white; margin:0.5rem 0;
+  }
+  .esg-forest-card p {
+    font-family:'Roboto Serif',serif; font-size:0.9rem;
+    font-weight:300; color:rgba(255,255,255,0.6); line-height:1.7;
+  }
+  .esg-badge {
+    display:inline-block; margin-top:1.2rem;
+    background:rgba(201,168,76,0.18); border:1px solid rgba(201,168,76,0.3);
+    color:var(--gold-light);
+    font-family:'Poppins',sans-serif; font-size:0.7rem; font-weight:600;
+    letter-spacing:0.1em; text-transform:uppercase;
+    padding:0.5rem 1rem;
+  }
+
+  /* ========== MILESTONES / TIMELINE ========== */
+  .milestones { background:var(--warm-white); }
+  .timeline { margin-top:3rem; position:relative; }
+  .timeline::before {
+    content:''; position:absolute; left:120px; top:0; bottom:0;
+    width:1px; background:var(--cream-dark);
+  }
+  .timeline-item {
+    display:grid; grid-template-columns:110px 1fr;
+    gap:2rem; margin-bottom:3rem; position:relative;
+  }
+  .timeline-left { text-align:right; padding-top:4px; position:relative; }
+  .timeline-date {
+    font-family:'Poppins',sans-serif; font-size:0.68rem; font-weight:700;
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted);
+    display:block;
+  }
+  .timeline-dot {
+    position:absolute; right:-2.35rem; top:6px;
+    width:12px; height:12px;
+    background:var(--cream-dark); border:2px solid var(--cream-dark);
+    border-radius:50%;
+  }
+  .timeline-dot.gold { background:var(--gold); border-color:var(--gold); box-shadow:0 0 0 4px rgba(201,168,76,0.15); }
+  .timeline-right {}
+  .timeline-tag {
+    font-family:'Poppins',sans-serif; font-size:0.65rem; font-weight:700;
+    letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--forest-light); margin-bottom:0.4rem;
+  }
+  .timeline-right h3 {
+    font-family:'Poppins',sans-serif; font-size:1.1rem;
+    font-weight:700; letter-spacing:-0.01em; margin-bottom:0.4rem;
+    color:var(--charcoal);
+  }
+  .timeline-right p {
+    font-family:'Roboto Serif',serif; font-size:0.92rem;
+    font-weight:300; color:var(--text-mid); line-height:1.7;
+  }
+
+  /* ========== NEWS ========== */
+  .news { background:var(--cream); }
+  .news-header { display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem; margin-bottom:2.5rem; }
+  .news-all-link {
+    font-family:'Poppins',sans-serif; font-size:0.72rem; font-weight:700;
+    letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--forest-light); text-decoration:none;
+    transition:gap 0.2s; display:flex; align-items:center; gap:8px;
+  }
+  .news-all-link:hover { gap:14px; }
+  .news-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+  .news-card {
+    background:var(--warm-white); padding:2.2rem;
+    transition:background 0.3s;
+    border-bottom:3px solid transparent;
+  }
+  .news-card:hover { background:var(--forest); border-bottom-color:var(--gold); }
+  .news-card:hover * { color:rgba(255,255,255,0.85) !important; }
+  .news-card:hover .news-read-link { color:var(--gold) !important; }
+  .news-card-tag {
+    font-family:'Poppins',sans-serif; font-size:0.62rem; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--forest-light); margin-bottom:0.8rem;
+    transition:color 0.3s;
+  }
+  .news-card-title {
+    font-family:'Poppins',sans-serif; font-size:1rem; font-weight:700;
+    letter-spacing:-0.01em; line-height:1.35; margin-bottom:0.8rem;
+    color:var(--charcoal); transition:color 0.3s;
+  }
+  .news-card p {
+    font-family:'Roboto Serif',serif; font-size:0.88rem;
+    font-weight:300; color:var(--text-mid); line-height:1.7;
+    transition:color 0.3s;
+  }
+  .news-card-footer {
+    margin-top:1.2rem; display:flex; justify-content:space-between; align-items:center;
+  }
+  .news-date {
+    font-family:'Poppins',sans-serif; font-size:0.65rem; font-weight:600;
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted);
+    transition:color 0.3s;
+  }
+  .news-read-link {
+    font-family:'Poppins',sans-serif; font-size:0.7rem; font-weight:700;
+    letter-spacing:0.08em; color:var(--forest-light);
+    text-decoration:none; transition:color 0.3s;
+  }
+
+  /* ========== NEWSLETTER ========== */
+  .newsletter { background:var(--charcoal); padding:clamp(3rem,6vw,5rem) clamp(2rem,8vw,5rem); }
+  .newsletter-inner { max-width:560px; margin:0 auto; text-align:center; }
+  .newsletter h2 {
+    color:white; font-family:'Poppins',sans-serif;
+    font-size:clamp(1.6rem,3vw,2.5rem);
+    font-weight:700; letter-spacing:-0.02em;
+  }
+  .newsletter h2 em {
+    font-family:'Roboto Serif',serif; font-style:italic;
+    font-weight:300; color:var(--gold);
+  }
+  .newsletter p {
+    font-family:'Roboto Serif',serif; font-size:0.95rem;
+    font-weight:300; color:rgba(255,255,255,0.55); margin:1rem 0 1.8rem;
+    line-height:1.7;
+  }
+  .newsletter-form { display:flex; }
+  .newsletter-form input {
+    flex:1; background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12); border-right:none;
+    padding:0.9rem 1.2rem; color:white;
+    font-family:'Roboto Serif',serif; font-size:0.9rem;
+    outline:none; transition: border-color 0.2s;
+  }
+  .newsletter-form input:focus { border-color:rgba(255,255,255,0.3); }
+  .newsletter-form input::placeholder { color:rgba(255,255,255,0.3); }
+  .newsletter-form button {
+    background:var(--gold); border:none;
+    padding:0.9rem 1.8rem; cursor:pointer;
+    font-family:'Poppins',sans-serif; font-size:0.72rem;
+    font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--forest); transition: background 0.2s;
+  }
+  .newsletter-form button:hover { background:var(--gold-light); }
+
+  /* ========== FOOTER ========== */
+  footer {
+    background:var(--forest); padding:clamp(2.5rem,5vw,4rem) clamp(2rem,6vw,4rem);
+    color:rgba(255,255,255,0.5);
+  }
+  .footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2.5rem; }
+  .footer-brand h3 {
+    font-family:'Poppins',sans-serif; font-size:1rem; font-weight:700;
+    color:white; letter-spacing:-0.01em; margin-bottom:0.8rem;
+  }
+  .footer-brand p {
+    font-family:'Roboto Serif',serif; font-size:0.85rem;
+    font-weight:300; line-height:1.7; color:rgba(255,255,255,0.5);
+  }
+  .footer-brand address {
+    font-style:normal; font-family:'Roboto Serif',serif;
+    font-size:0.8rem; line-height:1.8; color:rgba(255,255,255,0.4);
+    margin-top:1rem;
+  }
+  .footer-col h4 {
+    font-family:'Poppins',sans-serif; font-size:0.65rem; font-weight:700;
+    letter-spacing:0.2em; text-transform:uppercase; color:var(--gold);
+    margin-bottom:1rem;
+  }
+  .footer-col ul { list-style:none; }
+  .footer-col ul li { margin-bottom:0.5rem; }
+  .footer-col ul li a {
+    font-family:'Roboto Serif',serif; font-size:0.85rem;
+    font-weight:300; color:rgba(255,255,255,0.5); text-decoration:none;
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color:var(--gold); }
+  .footer-bottom {
+    border-top:1px solid rgba(255,255,255,0.08); margin-top:2.5rem;
+    padding-top:1.5rem; text-align:center;
+    font-family:'Poppins',sans-serif; font-size:0.7rem;
+    font-weight:500; letter-spacing:0.05em; color:rgba(255,255,255,0.3);
+  }
+
+  /* ========== FADE ANIMATIONS ========== */
+  .fade-up { opacity:0; transform:translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .fade-up.visible { opacity:1; transform:translateY(0); }
+  .fade-up-delay-1 { transition-delay:0.12s; }
+  .fade-up-delay-2 { transition-delay:0.24s; }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width:900px) {
+    section { padding: 3.5rem 1.6rem; }
+    .mission-inner, .esg-inner { grid-template-columns:1fr; }
+    .features-grid, .news-grid { grid-template-columns:1fr; }
+    .stats-bar { grid-template-columns:1fr; padding:1.5rem; }
+    .stat-item { border-right:none; border-bottom:1px solid rgba(255,255,255,0.08); }
+    .timeline::before { left:80px; }
+    .timeline-item { grid-template-columns:70px 1fr; }
+    .chapter-break { flex-direction:column; gap:1rem; }
+    .chapter-break-number { font-size:clamp(3rem,15vw,5rem); }
+    .h-hero-slide { padding:0 24px; }
+    .hero-down-hint, .hero-scroll-arrow { right:24px; }
+    .mission-visual { height:320px; }
+    .news-all-link { font-size:0.65rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="mainNavbar">
+  <div class="logo"><a class="active_header" href="./"><img src="assets/images/roha logo-01.png" alt="logo"></a></div>
+  <div class="right-nav">
+    <div class="nav-links" id="navLinks">
+      <a href="#mission">About</a>
+      <a href="#building">Campus</a>
+      <a href="#esg">ESG</a>
+      <a href="#milestones">Milestones</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="expand-menu-btn" id="expandMenuBtn" aria-label="Expand menu">
+      <i class="fas fa-chevron-circle-down"></i>&nbsp;<span style="font-size:0.65rem;font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:0.12em;">MENU</span>
+    </button>
+    <button class="menu-toggle-btn" id="sidebarToggleBtn" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== SIDEBAR ========== -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="sidebar-offcanvas" id="sideDrawer">
+  <div class="sidebar-header">
+    <a class="active_header" href="./"><img src="assets/images/roha logo-01.png" alt="logo"></a>
+    <button class="close-sidebar" id="closeSidebarBtn">×</button>
+  </div>
+  <ul class="sidebar-menu">
+    <li><a href="#top"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#mission"><i class="fas fa-bullseye"></i> Our Mission</a></li>
+    <li><a href="#building"><i class="fas fa-hospital-user"></i> The Campus</a></li>
+    <li><a href="#esg"><i class="fas fa-seedling"></i> ESG &amp; Sustainability</a></li>
+    <li><a href="#milestones"><i class="fas fa-chart-line"></i> Milestones</a></li>
+    <li><a href="#news"><i class="fas fa-newspaper"></i> Newsroom</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact &amp; Newsletter</a></li>
+  </ul>
+  <div class="sidebar-contact">
+    <p><i class="fas fa-map-marker-alt"></i> 379 Cape Verde Street, A4 Building, 6th Floor, Addis Ababa</p>
+    <p><i class="fas fa-phone-alt"></i> +251 1163 93 910</p>
+    <p><i class="fas fa-envelope"></i> info@rohamedicalcampus.com</p>
+    <div class="social-sidebar">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== HERO ========== -->
+<div class="h-hero-wrapper" id="heroSection">
+  <div class="h-hero-slider">
+    <div class="h-hero-track" id="heroTrack">
+
+      <!-- Slide 1 -->
+      <div class="h-hero-slide slide-bg-0 active" data-index="0">
+        <div class="hero-slide-content">
+          <div class="hero-chapter hero-s-in">
+            <span class="hero-chapter-line"></span>
+            <span class="hero-chapter-badge">01 / 04 &nbsp;·&nbsp; Introduction</span>
+          </div>
+          <h1 class="hero-s-in d1">Roha Medical Campus<br>is <em>a new chapter</em> for<br>healthcare in Africa.</h1>
+          <p class="hero-sub hero-s-in d2">Addis Ababa, Ethiopia</p>
+        </div>
+        <div class="hero-scroll-arrow hero-s-in d3">
+          <div class="arr-row"><span></span><span></span><span></span></div>
+          <span>Scroll to explore</span>
+        </div>
+        <div class="hero-deco-num">01</div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="h-hero-slide slide-bg-1" data-index="1">
+        <div class="hero-slide-content">
+          <div class="hero-chapter hero-s-in">
+            <span class="hero-chapter-line"></span>
+            <span class="hero-chapter-badge">02 / 04 &nbsp;·&nbsp; World-Class Care</span>
+          </div>
+          <h1 class="hero-s-in d1">A new benchmark<br>for <em>specialized excellence</em><br>across the continent.</h1>
+          <p class="hero-sub hero-s-in d2">Advanced Multispecialty Hospital</p>
+        </div>
+        <div class="hero-deco-num">02</div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="h-hero-slide slide-bg-2" data-index="2">
+        <div class="hero-slide-content">
+          <div class="hero-chapter hero-s-in">
+            <span class="hero-chapter-line"></span>
+            <span class="hero-chapter-badge">03 / 04 &nbsp;·&nbsp; Sustainable &amp; Green</span>
+          </div>
+          <h1 class="hero-s-in d1">Ethiopia's first<br>IFC-accredited <em style="color:var(--gl);">green hospital</em>.</h1>
+          <p class="hero-sub hero-s-in d2">12,000 native trees &nbsp;·&nbsp; Net-zero campus</p>
+        </div>
+        <div class="hero-deco-num">03</div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="h-hero-slide slide-bg-3" data-index="3">
+        <div class="hero-slide-content">
+          <div class="hero-chapter hero-s-in">
+            <span class="hero-chapter-line"></span>
+            <span class="hero-chapter-badge">04 / 04 &nbsp;·&nbsp; Education &amp; Research</span>
+          </div>
+          <h1 class="hero-s-in d1">A campus of learning,<br>discovery, and<br><em style="color:var(--gl);">sustainable living</em>.</h1>
+          <p class="hero-sub hero-s-in d2">Medical School &nbsp;·&nbsp; Research Hub</p>
+        </div>
+        <div class="hero-deco-num">04</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="hero-down-hint" id="heroDownHint" style="opacity:0.4;">
+    <div class="arr-down"><span></span><span></span><span></span></div>
+    <span>Discover More</span>
+  </div>
+</div>
+
+<div class="hero-timeline" id="heroTimeline">
+  <div class="hero-tl-track">
+    <div class="hero-tl-fill" id="heroTlFill" style="width:0%"></div>
+    <div class="hero-tl-dots" id="heroTlDots"></div>
+  </div>
+</div>
+
+<!-- ========== STATS BAR ========== -->
+<div class="stats-bar">
+  <div class="stat-item fade-up"><span class="stat-number">350+</span><span class="stat-label">Hospital Beds</span></div>
+  <div class="stat-item fade-up fade-up-delay-1"><span class="stat-number">12</span><span class="stat-label">Centers of Excellence</span></div>
+  <div class="stat-item fade-up fade-up-delay-2"><span class="stat-number">$130M</span><span class="stat-label">Investment in Healthcare</span></div>
+</div>
+
+<!-- ========== CHAPTER BREAK 1 ========== -->
+<div class="chapter-break">
+  <div class="chapter-break-number">01</div>
+  <div class="chapter-break-text">
+    <div class="chapter-break-label">The Story Begins</div>
+    <div class="chapter-break-title">Where vision meets <em>purpose</em></div>
+  </div>
+</div>
+
+<!-- ========== MISSION ========== -->
+<section class="mission" id="mission">
+  <div class="mission-inner">
+    <div>
+      <div class="section-eyebrow fade-up">Our Mission</div>
+      <h2 class="fade-up">Redefining what<br>healthcare looks like<br>in <em>Africa</em></h2>
+      <p class="mission-text-body fade-up">
+        Roha Medical Campus is an integrated health campus under development in the heart of Addis Ababa. This isn't just another hospital — it is a declaration that world-class, high-quality, affordable care belongs here, in Ethiopia, for the people of this continent.
+      </p>
+      <blockquote class="pull-quote fade-up">
+        "A campus that heals the patient, the community, and the planet."
+      </blockquote>
+      <p class="mission-text-body fade-up">
+        When complete, it will be powered by technology, guided by a deep commitment to sustainability, and grounded in the belief that geography should never determine the quality of care you receive.
+      </p>
+      <a href="#building" class="btn-primary fade-up">Discover the Campus →</a>
+    </div>
+    <div class="mission-visual fade-up">
+      <div class="mission-card large">
+        <blockquote>"Every stone laid here is a promise to the people of Ethiopia — and to the continent that is watching."</blockquote>
+      </div>
+      <div class="mission-card accent">
+        <span>3</span>
+        <p>International accreditations targeted at opening</p>
+      </div>
+      <div class="mission-pill">Under Construction</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CHAPTER BREAK 2 ========== -->
+<div class="chapter-break">
+  <div class="chapter-break-number">02</div>
+  <div class="chapter-break-text">
+    <div class="chapter-break-label">The Place</div>
+    <div class="chapter-break-title">Built for every dimension<br>of <em>complete healing</em></div>
+  </div>
+</div>
+
+<!-- ========== BUILDING ========== -->
+<section class="building" id="building">
+  <div class="section-eyebrow fade-up">The Campus</div>
+  <h2 class="fade-up">Everything needed<br>for <em>complete</em> healing</h2>
+  <p class="lead fade-up">Six pillars — built together, working together — so that no one ever has to leave Ethiopia to receive the care they deserve.</p>
+  <div class="features-grid">
+    <div class="feature-cell fade-up"><div class="feature-icon">🏥</div><h3>Advanced Multispecialty Hospital</h3><p>A 350-bed hospital with 12 centers of excellence spanning cardiology, oncology, orthopedics, pediatrics, and more.</p></div>
+    <div class="feature-cell fade-up fade-up-delay-1"><div class="feature-icon">🎓</div><h3>World-Class Medical School</h3><p>Training the next generation of African healthcare leaders — physicians, nurses, and specialists who will serve this continent.</p></div>
+    <div class="feature-cell fade-up fade-up-delay-2"><div class="feature-icon">🔬</div><h3>Research &amp; Innovation Hub</h3><p>Dedicated facilities for medical research relevant to African health challenges, from infectious disease to maternal care.</p></div>
+    <div class="feature-cell fade-up"><div class="feature-icon">🌳</div><h3>Urban Healing Forest</h3><p>12,000 native trees planted using the Miyawaki method — creating a living, breathing green lung at the heart of the campus.</p></div>
+    <div class="feature-cell fade-up fade-up-delay-1"><div class="feature-icon">♻️</div><h3>Sustainable Infrastructure</h3><p>Advanced waste management, rainwater harvesting, and clean technology systems designed to achieve net-zero emissions.</p></div>
+    <div class="feature-cell fade-up fade-up-delay-2"><div class="feature-icon">💡</div><h3>Technology-Driven Care</h3><p>Digital tools, electronic health records, and world-class medical equipment — care that is connected and future-ready.</p></div>
+  </div>
+</section>
+
+<!-- ========== CHAPTER BREAK 3 ========== -->
+<div class="chapter-break" style="background:var(--forest); border-color:rgba(255,255,255,0.06);">
+  <div class="chapter-break-number" style="color:rgba(255,255,255,0.07);">03</div>
+  <div class="chapter-break-text">
+    <div class="chapter-break-label" style="color:var(--sage);">The Commitment</div>
+    <div class="chapter-break-title" style="color:white;">More than a hospital.<br>A <em>force for good</em>.</div>
+  </div>
+</div>
+
+<!-- ========== ESG ========== -->
+<section class="esg" id="esg">
+  <div class="esg-inner">
+    <div>
+      <div class="section-eyebrow fade-up">Environmental, Social &amp; Governance</div>
+      <h2 class="fade-up" style="color:white;">A campus that cares<br>for <em>more than patients</em></h2>
+      <p class="lead fade-up">Roha is working toward a net-zero emission campus — the first of its kind in Ethiopia. Because healing and sustainability are not opposing forces. They are the same story.</p>
+      <div class="esg-pillars fade-up">
+        <div class="esg-pillar"><span class="pillar-num">E</span><div><h4>Environmental</h4><p>Net-zero campus, 12,000 native trees, IFC EDGE green building certification — a blueprint for responsible healthcare in Africa.</p></div></div>
+        <div class="esg-pillar"><span class="pillar-num">S</span><div><h4>Social</h4><p>Needs-based no-cost services, gender equity programs, and community health education woven into everything we do.</p></div></div>
+        <div class="esg-pillar"><span class="pillar-num">G</span><div><h4>Governance</h4><p>Anti-corruption training, full ESIA transparency, and adherence to IFC Performance Standards in all operations.</p></div></div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="esg-forest-card">
+        <span class="tree-count">12K</span>
+        <h3>Native trees planted</h3>
+        <p>Using the Miyawaki dense-planting method, a thriving urban forest is growing alongside this campus — sequestering carbon, cooling the air, and reminding every visitor that nature is not separate from health.</p>
+        <span class="esg-badge">🌿 Ethiopia's First Green Hospital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CHAPTER BREAK 4 ========== -->
+<div class="chapter-break">
+  <div class="chapter-break-number">04</div>
+  <div class="chapter-break-text">
+    <div class="chapter-break-label">The Journey</div>
+    <div class="chapter-break-title">A story being written<br>in <em>real time</em></div>
+  </div>
+</div>
+
+<!-- ========== MILESTONES ========== -->
+<section class="milestones" id="milestones">
+  <div class="section-eyebrow fade-up">Progress</div>
+  <h2 class="fade-up">The milestones that<br>mark our <em>journey</em></h2>
+  <p class="lead fade-up">Construction is ongoing and moving quickly. Each milestone below is proof that this vision is becoming a reality — one achievement at a time.</p>
+  <div class="timeline fade-up">
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">Nov 2024</span>
+        <div class="timeline-dot gold"></div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-tag">Press Release</div>
+        <h3>Ethiopia's First IFC-Accredited Green Hospital</h3>
+        <p>Roha received the IFC EDGE green building certification — a landmark moment that places Ethiopia on the global map of sustainable healthcare.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">Sep 2024</span>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-tag">Diplomatic Visit</div>
+        <h3>UK Trade Commissioner Tours the Site</h3>
+        <p>John Humphrey witnessed first-hand the innovative construction techniques and sustainable systems transforming the Bole district.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">Sep 2024</span>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-tag">Certification</div>
+        <h3>Environmental Clearance Certificate</h3>
+        <p>The Ethiopian Environmental Protection Authority granted clearance — a pivotal milestone marking the project's full regulatory compliance.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">Ongoing</span>
+        <div class="timeline-dot gold"></div>
+      </div>
+      <div class="timeline-right">
+        <div class="timeline-tag">Construction</div>
+        <h3>Hospital Building Underway</h3>
+        <p>Active construction continues in the Bole district of Addis Ababa. The campus is rising — and with it, a new era of healthcare for the continent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NEWS ========== -->
+<section class="news" id="news">
+  <div class="news-header">
+    <div>
+      <div class="section-eyebrow fade-up">News &amp; Updates</div>
+      <h2 class="fade-up">Latest from<br><em>the campus</em></h2>
+    </div>
+    <a href="#" class="news-all-link fade-up">All News &nbsp;→</a>
+  </div>
+  <div class="news-grid">
+    <div class="news-card fade-up">
+      <div class="news-card-tag">Deep Dive</div>
+      <h3 class="news-card-title">Green Buildings with Yenework Tsegaye</h3>
+      <p>Exploring Roha's approach to sustainable healthcare infrastructure — and why green design is a health intervention in itself.</p>
+      <div class="news-card-footer">
+        <span class="news-date">Dec 2024</span>
+        <a href="#" class="news-read-link">Read →</a>
+      </div>
+    </div>
+    <div class="news-card fade-up fade-up-delay-1">
+      <div class="news-card-tag">Press Release</div>
+      <h3 class="news-card-title">IFC-Accredited Green Hospital</h3>
+      <p>First healthcare facility in Ethiopia to achieve EDGE certification — a milestone that sets a new standard for the industry.</p>
+      <div class="news-card-footer">
+        <span class="news-date">Nov 2024</span>
+        <a href="#" class="news-read-link">Read →</a>
+      </div>
+    </div>
+    <div class="news-card fade-up fade-up-delay-2">
+      <div class="news-card-tag">News</div>
+      <h3 class="news-card-title">Environmental Clearance</h3>
+      <p>ESIA clearance marks a pivotal milestone in Roha's journey toward becoming the most sustainable medical campus on the continent.</p>
+      <div class="news-card-footer">
+        <span class="news-date">Sep 2024</span>
+        <a href="#" class="news-read-link">Read →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NEWSLETTER ========== -->
+<div class="newsletter" id="contact">
+  <div class="newsletter-inner fade-up">
+    <h2>Stay part of <em>the story</em></h2>
+    <p>Join our community and receive construction milestones, news, and updates as this campus comes to life.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Your email address">
+      <button>Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Roha Medical Campus</h3>
+      <p>An integrated health campus under development in Addis Ababa, Ethiopia — built for the continent.</p>
+      <address>379 Cape Verde Street<br>+251 1163 93 910<br>info@rohamedicalcampus.com</address>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#mission">About</a></li>
+        <li><a href="#building">Campus</a></li>
+        <li><a href="#esg">ESG</a></li>
+        <li><a href="#milestones">Milestones</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Press Releases</a></li>
+        <li><a href="#">Newsroom</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Roha Medical Campus. All rights reserved.</div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navbar = document.getElementById('mainNavbar');
+  const navLinks = document.getElementById('navLinks');
+  const expandMenuBtn = document.getElementById('expandMenuBtn');
+  const sidebarToggleBtn = document.getElementById('sidebarToggleBtn');
+  const sideDrawer = document.getElementById('sideDrawer');
+  const overlay = document.getElementById('sidebarOverlay');
+  const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+  let isMenuExpanded = false;
+
+  if (expandMenuBtn) {
+    expandMenuBtn.addEventListener('click', function() {
+      isMenuExpanded = !isMenuExpanded;
+      navLinks.classList.toggle('active', isMenuExpanded);
+      const icon = isMenuExpanded ? 'fa-chevron-circle-up' : 'fa-chevron-circle-down';
+      const label = isMenuExpanded ? 'CLOSE' : 'MENU';
+      expandMenuBtn.innerHTML = `<i class="fas ${icon}"></i>&nbsp;<span style="font-size:0.65rem;font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:0.12em;">${label}</span>`;
+    });
+  }
+
+  function openSidebar() { sideDrawer.classList.add('open'); overlay.classList.add('active'); document.body.style.overflow='hidden'; }
+  function closeSidebar() { sideDrawer.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow=''; }
+  if (sidebarToggleBtn) sidebarToggleBtn.onclick = openSidebar;
+  if (overlay) overlay.onclick = closeSidebar;
+  if (closeSidebarBtn) closeSidebarBtn.onclick = closeSidebar;
+  document.querySelectorAll('.sidebar-menu a').forEach(link => link.addEventListener('click', closeSidebar));
+
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+});
+
+// Hero Slider
+(function() {
+  const H_SLIDES = 4;
+  let currentIndex = 0;
+  let isAnimating = false;
+  let autoInterval;
+
+  const track = document.getElementById('heroTrack');
+  const tlFill = document.getElementById('heroTlFill');
+  const tlDots = document.getElementById('heroTlDots');
+  const downHint = document.getElementById('heroDownHint');
+  const heroSection = document.getElementById('heroSection');
+  const heroTimeline = document.getElementById('heroTimeline');
+
+  const slideLabels = ['Intro', 'World-Class', 'Green', 'Education'];
+
+  slideLabels.forEach((label, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'hero-tl-dot';
+    dot.innerHTML = `<span class="dot-label">${label}</span>`;
+    dot.addEventListener('click', () => goToSlide(i));
+    tlDots.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.hero-tl-dot');
+
+  function goToSlide(index) {
+    if (isAnimating || index === currentIndex) return;
+    if (index < 0) index = 0;
+    if (index >= H_SLIDES) index = H_SLIDES - 1;
+    isAnimating = true;
+    document.querySelectorAll('.h-hero-slide').forEach((slide, i) => slide.classList.toggle('active', i === index));
+    track.style.transform = `translateX(-${index * 25}%)`;
+    tlFill.style.width = ((index / (H_SLIDES - 1)) * 100) + '%';
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('reached', i <= index);
+      dot.classList.toggle('active', i === index);
+    });
+    if (downHint) downHint.style.opacity = index === H_SLIDES - 1 ? '1' : '0.4';
+    currentIndex = index;
+    setTimeout(() => { isAnimating = false; }, 750);
+  }
+
+  function updateTimelineVisibility() {
+    if (heroSection && heroTimeline) {
+      const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+      heroTimeline.classList.toggle('hidden', window.scrollY + 100 > heroBottom);
+    }
+  }
+
+  let wheelActive = true;
+  heroSection.addEventListener('wheel', function(e) {
+    const rect = heroSection.getBoundingClientRect();
+    if (rect.top <= 100 && rect.bottom >= 100 && wheelActive) {
+      e.preventDefault();
+      if (e.deltaY > 0 && currentIndex < H_SLIDES - 1) goToSlide(currentIndex + 1);
+      else if (e.deltaY < 0 && currentIndex > 0) goToSlide(currentIndex - 1);
+    }
+  }, { passive: false });
+
+  let touchStart = 0;
+  heroSection.addEventListener('touchstart', (e) => { touchStart = e.changedTouches[0].screenX; });
+  heroSection.addEventListener('touchend', (e) => {
+    const diff = e.changedTouches[0].screenX - touchStart;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0 && currentIndex > 0) goToSlide(currentIndex - 1);
+      else if (diff < 0 && currentIndex < H_SLIDES - 1) goToSlide(currentIndex + 1);
+    }
+  });
+
+  if (downHint) downHint.addEventListener('click', () => {
+    const stats = document.querySelector('.stats-bar');
+    if (stats) stats.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  function startAutoAdvance() {
+    if (autoInterval) clearInterval(autoInterval);
+    autoInterval = setInterval(() => {
+      if (currentIndex < H_SLIDES - 1) goToSlide(currentIndex + 1);
+      else clearInterval(autoInterval);
+    }, 6000);
+  }
+
+  heroSection.addEventListener('click', () => clearInterval(autoInterval));
+  heroSection.addEventListener('wheel', () => clearInterval(autoInterval));
+  window.addEventListener('scroll', updateTimelineVisibility);
+
+  goToSlide(0);
+  startAutoAdvance();
+  updateTimelineVisibility();
+})();
+
+// Fade-up on scroll
+const fadeEls = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+fadeEls.forEach(el => observer.observe(el));
+
+// Smooth anchor scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const hash = this.getAttribute('href');
+    if (hash === '#' || hash === 'javascript:void(0)') return;
+    const target = document.querySelector(hash);
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>

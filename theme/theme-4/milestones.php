@@ -1,0 +1,12 @@
+<!-- Milestones / Timeline Section -->
+<section class="milestones" id="milestones">
+  <div class="section-label fade-up">Progress</div>
+  <h2 class="fade-up">A story being<br>written in <em>real time</em></h2>
+  <p class="lead fade-up">Construction is ongoing and moving quickly. Here are the milestones that mark our journey from vision to reality.</p>
+  <div class="timeline fade-up">
+    <div class="timeline-item"><div class="timeline-date">Nov 2024</div><div class="timeline-dot gold"></div><div><div class="timeline-tag" style="font-size:0.7rem; color:var(--forest-light); font-weight:500;">Press Release</div><h3 style="font-size:1.2rem;">Ethiopia's First World Bank IFC-Accredited Green Hospital</h3><p>Roha Medical Campus became the first healthcare development in Ethiopia to receive the IFC EDGE green building certification — setting a new national standard for sustainable healthcare.</p></div></div>
+    <div class="timeline-item"><div class="timeline-date">Sep 2024</div><div class="timeline-dot"></div><div><div class="timeline-tag" style="font-size:0.7rem; color:var(--forest-light);">Diplomatic Visit</div><h3 style="font-size:1.2rem;">UK Trade Commissioner John Humphrey Tours the Site</h3><p>The United Kingdom's Trade Commissioner for Africa visited Roha Medical Campus to witness firsthand the innovative construction techniques and environmental features transforming healthcare delivery in Ethiopia.</p></div></div>
+    <div class="timeline-item"><div class="timeline-date">Sep 2024</div><div class="timeline-dot"></div><div><div class="timeline-tag" style="font-size:0.7rem; color:var(--forest-light);">Certification</div><h3 style="font-size:1.2rem;">Environmental Clearance Certificate Secured</h3><p>The Federal Democratic Republic of Ethiopia's Environmental Protection Authority granted Roha Medical Campus its Environmental Clearance Certificate following a rigorous Environmental and Social Impact Assessment.</p></div></div>
+    <div class="timeline-item"><div class="timeline-date">Ongoing</div><div class="timeline-dot gold"></div><div><div class="timeline-tag" style="font-size:0.7rem; color:var(--forest-light);">Construction</div><h3 style="font-size:1.2rem;">Hospital Building is Underway</h3><p>The Advanced Multispecialty Hospital is under active construction in the Bole district of Addis Ababa, with the first hospital slated to open in the next couple of years. Momentum is building.</p></div></div>
+  </div>
+</section>
