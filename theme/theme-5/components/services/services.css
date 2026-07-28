@@ -51,6 +51,10 @@
     line-height: 1.12;
     margin-top: 18px;
 }
+.services-h1 em {
+    font-style: Italic;
+    color: var(--roha-primary-action);
+}
 
 .services-lede {
     margin-top: 22px;
@@ -117,7 +121,7 @@
 .services-h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: var(--roha-structure);
+    color: var(--roha-body-text);
     font-size: clamp(26px, 3.4vw, 38px);
     line-height: 1.18;
     margin-top: 6px;

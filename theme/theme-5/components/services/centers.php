@@ -4,7 +4,7 @@
         <div class="services-sec-top">
             <div class="services-eyebrow">Centers of Excellence</div>
             <h2 class="services-h2">Five centers built around the patient</h2>
-            <p class="services-sec-desc">Each center brings together the specialists, technology, and dedicated spaces needed to treat one area of care fully — end to end, under one roof.</p>
+            <p class="services-sec-desc">Each center brings together the specialists, technology, and dedicated spaces needed to treat one area of care end to end, under one roof.</p>
         </div>
 
         <div class="services-center-grid">
@@ -22,10 +22,10 @@
                 <h3 class="services-h3">Oncology</h3>
                 <p class="services-center-lede">A full continuum of cancer care, from early screening to complex surgical oncology.</p>
                 <ul class="services-center-bullets">
-                    <li>Screening, nuclear medicine diagnostics &amp; surgical oncology in one continuum</li>
-                    <li>Advanced lab &amp; pathology for rapid, accurate cellular analysis</li>
-                    <li>Radiation oncology with LINAC &amp; targeted brachytherapy</li>
-                    <li>Dedicated chemotherapy unit with a compounding area for personalized dosing</li>
+                    <li>Routine and high-risk cancer screening to catch disease at its most treatable stage</li>
+                    <li>Nuclear medicine imaging and advanced lab &amp; pathology for fast, accurate diagnosis</li>
+                    <li>Surgical oncology and radiation therapy with LINAC (linear accelerator) &amp; targeted brachytherapy</li>
+                    <li>A dedicated chemotherapy unit with a compounding area for personalized dosing</li>
                 </ul>
             </div>
 
@@ -40,10 +40,10 @@
                 <h3 class="services-h3">Cardiology</h3>
                 <p class="services-center-lede">A regional powerhouse for both routine and life-threatening cardiac events.</p>
                 <ul class="services-center-bullets">
-                    <li>Two catheterization labs — monoplane &amp; biplane imaging</li>
-                    <li>Minimally invasive procedures &amp; electrophysiology (EP) studies</li>
-                    <li>Cardiac Operating Theater directly linked to the Coronary Care Unit (CCU)</li>
-                    <li>Seamless transition from surgery to intensive recovery</li>
+                    <li>Two catheterization labs (Cath Labs) with monoplane &amp; biplane imaging for precise cardiac assessment</li>
+                    <li>Minimally invasive cardiac procedures and electrophysiology (EP) studies for diagnosing and treating irregular heart rhythms</li>
+                    <li>A Cardiac Operating Theater directly linked to the Coronary Care Unit (CCU)</li>
+                    <li>A seamless transition from surgery to intensive, specialized recovery care</li>
                 </ul>
             </div>
 
@@ -57,12 +57,12 @@
                     </svg>
                 </div>
                 <h3 class="services-h3">Neurology &amp; Neurosurgery</h3>
-                <p class="services-center-lede">Cutting-edge imaging and surgical technology for the brain, spine, and nervous system.</p>
+                <p class="services-center-lede">Advanced imaging and state-of-the-art surgical technology for the diagnosis and treatment of disorders affecting the brain, spine, and nervous system.</p>
                 <ul class="services-center-bullets">
-                    <li>Biplane cath lab for rapid, time-sensitive neuro-interventions</li>
-                    <li>Built around a "time is brain" rapid-response model</li>
-                    <li>Neurosurgery theatre equipped with advanced neuro-navigation tools</li>
-                    <li>Treats complex brain, spine &amp; nervous system conditions</li>
+                    <li>A biplane cath lab for time-sensitive neuro-interventions, built around a "time is brain" model for stroke and other emergencies</li>
+                    <li>A neurosurgery theater equipped with advanced neuro-navigation tools</li>
+                    <li>Treatment for complex brain, spine &amp; nervous system conditions, including stroke, tumors &amp; chronic neurological disease</li>
+                    <li>Physical therapy and neurological rehabilitation to support long-term recovery</li>
                 </ul>
             </div>
 
@@ -81,7 +81,7 @@
                     <li>Advanced obstetrics &amp; high-risk pregnancy management</li>
                     <li>Comfortable labor &amp; delivery suites with leading-edge monitoring</li>
                     <li>General &amp; sub-specialty pediatric services in one cohesive space</li>
-                    <li>Rapid access to specialized clinical interventions when needed</li>
+                    <li>Rapid escalation to specialized clinical interventions when needed</li>
                 </ul>
             </div>
 
@@ -98,7 +98,7 @@
                     <li>World-class care for musculoskeletal injuries &amp; degenerative conditions</li>
                     <li>Minimally invasive arthroscopic surgery</li>
                     <li>Joint implant &amp; replacement procedures</li>
-                    <li>Focused on faster recovery &amp; long-term function</li>
+                    <li>Physical therapy and rehabilitation for faster recovery and long-term function</li>
                 </ul>
             </div>
 

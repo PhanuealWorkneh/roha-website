@@ -16,8 +16,8 @@ require 'header-home.php';
     include './components/esg/intro.php'; 
     include './components/esg/objectives.php'; 
     include './components/esg/policy.php'; 
-    include './components/esg/edge.php'; 
     include './components/esg/forest.php'; 
+    include './components/esg/community.php'; 
     include './components/esg/safety.php'; 
     include './components/esg/disclosure.php'; 
 ?>

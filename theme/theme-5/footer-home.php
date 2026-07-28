@@ -2,8 +2,8 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <h3>Roha Medical Campus</h3>
-      <p>An integrated health campus under development in Addis Ababa, Ethiopia — built for the continent.</p>
+      <h3>Roha Advanced Multispecialty Hospital</h3>
+      <p>A world-class 300-bed hospital under development in Addis Ababa, Ethiopia.</p>
       <address>379 Cape Verde Street<br>+251 1163 93 910<br>info@rohamedicalcampus.com</address>
     </div>
     <div class="footer-col">

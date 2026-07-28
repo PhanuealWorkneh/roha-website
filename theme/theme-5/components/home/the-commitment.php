@@ -39,7 +39,7 @@
 
         <h3>Ethiopia's First Green Hospital</h3>
 
-        <p class="text-white">
+        <p>
           Roha Health Ethiopia's Advanced Multispecialty Hospital has been awarded IFC's EDGE Design Certificate. Its environment-first design reduces energy consumption by <strong>35%</strong>, embodied material energy by <strong>24%</strong>, and water usage by <strong>21%</strong> compared with conventional hospitals.
         </p>
 

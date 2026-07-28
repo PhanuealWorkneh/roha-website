@@ -2,9 +2,9 @@
     <div class="wrap">
         <div class="intro-inner">
             <div class="intro-lede">Introduction</div>
-            <h2>Delivering world-class, <em>comprehensive</em> healthcare</h2>
-            <p>Roha Advanced Multispecialty Hospital is a premier 300-bed facility dedicated to delivering world-class, comprehensive healthcare. The hospital features a diverse array of specialized departments, each fully equipped with state-of-the-art diagnostic tools and cutting-edge medical infrastructure.</p>
-            <p>By pairing innovative treatment approaches with expert clinical care, the hospital is built to ensure every patient receives the highest standard of care.</p>
+            <h2>A landmark hospital, engineered by a <em>global team</em></h2>
+            <p>Every part of Roha Advanced Multispecialty Hospital has been engineered as a single, integrated facility, built from the ground up around how patients, clinicians, and care teams actually move through a hospital day.</p>
+            <p>Bringing this to life is a multinational team of architecture, engineering, and construction firms spanning South Africa, Ethiopia, and beyond — pairing international best practice in hospital design and construction with deep local expertise, resulting in a facility built to global standards.</p>
         </div>
     </div>
 </section>

@@ -14,7 +14,7 @@
       <div class="section-eyebrow fade-up">Our Mission</div>
       <h2 class="fade-up">Redefining healthcare <br>in <em>Africa</em></h2>
       <p class="mission-text-body fade-up">
-        Roha Health’s Advanced Multispecialty Hospital is an integrated health facility in the heart of Addis Ababa. We are setting a new benchmark for healthcare in Africa – delivering global standards in patient care through exceptional medical expertise, world-class facilities, and a commitment to continuous improvement.  
+        Roha Health's Advanced Multispecialty Hospital is an integrated health facility in the heart of Addis Ababa. We are setting a new benchmark for healthcare in Africa – delivering global standards in patient care through exceptional medical expertise, world-class facilities, and a commitment to continuous improvement.  
       </p>
       <blockquote class="pull-quote fade-up">
         "A campus that heals the patient, the community, and the planet."
