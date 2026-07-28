@@ -4,9 +4,9 @@
         <div class="text-center mb-5">
             <span class="section-eyebrow">Explore Roha Health</span>
             <h2 class="mb-3">
-                Discover <em>Every Part</em> of the Facility
+                Discover <em class="text-white">Every Part</em> of the Facility
             </h2>
-            <p class="lead mx-auto">
+            <p class="lead mx-auto text-white">
                 A preview of everything that makes Roha Medical Campus a transformative healthcare destination. 
             </p>
         </div>

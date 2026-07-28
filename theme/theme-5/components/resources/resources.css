@@ -1,0 +1,393 @@
+/* ============================================================
+   RESOURCES PAGE STYLES
+   ============================================================ */
+
+/* ---- Resources Hero ---- */
+.resources-hero {
+    position: relative;
+    background: radial-gradient(120% 140% at 18% -10%, rgba(72, 191, 183, 0.92) 0%, rgba(0, 126, 118, 0.98) 38%, rgba(0, 56, 84, 1) 100%), linear-gradient(90deg, #48BFB7 0%, #007E76 52%, #003854 100%);
+    color: #fff;
+    overflow: hidden;
+    padding: 100px 0 80px;
+}
+
+.resources-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(120% 100% at 20% 10%, black, transparent 70%);
+    -webkit-mask-image: radial-gradient(120% 100% at 20% 10%, black, transparent 70%);
+    opacity: 0.36;
+    pointer-events: none;
+}
+
+.resources-hero-inner {
+    position: relative;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.resources-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 12.5px;
+    margin-bottom: 24px;
+    transition: color 0.25s ease;
+}
+
+.resources-back-link:hover {
+    color: #fff;
+}
+
+.resources-hero-tag {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.resources-hero-tag::before {
+    content: "";
+    width: 26px;
+    height: 1px;
+    background: #F6F222;
+}
+
+.resources-hero h1 {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500;
+    font-size: clamp(34px, 4.8vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #fff;
+    max-width: 640px;
+}
+
+.resources-hero h1 em {
+    font-style: italic;
+    color: #F6F222;
+}
+
+.resources-hero-sub {
+    margin: 22px 0 0;
+    max-width: 480px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+@media (max-width: 860px) {
+    .resources-hero {
+        padding: 72px 0 56px;
+    }
+}
+
+/* ---- Resources Sections ---- */
+.resources-section {
+    padding: 60px 0;
+}
+
+.resources-section:first-of-type {
+    padding-top: 90px;
+}
+
+.resources-section:last-of-type {
+    padding-bottom: 100px;
+}
+
+.resources-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.resources-section-label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #007E76;
+    margin-bottom: 24px;
+}
+
+/* ---- Brand Assets ---- */
+.resources-brand {
+    background: #fff;
+}
+
+.resources-brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(0, 56, 84, 0.1);
+    border: 1px solid rgba(0, 56, 84, 0.1);
+}
+
+.resources-brand-card {
+    background: #fff;
+    padding: 26px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.3s ease;
+}
+
+.resources-brand-card:hover {
+    background: #F7FAF9;
+}
+
+.resources-brand-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.resources-brand-icon-logo {
+    border: 1.5px solid #003854;
+}
+
+.resources-brand-icon-logo::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #007E76;
+    border-radius: 1px;
+    transform: rotate(45deg);
+}
+
+.resources-brand-icon-guidelines {
+    border-radius: 4px;
+    background: linear-gradient(90deg, #007E76 0%, #005B66 52%, #501195 100%);
+}
+
+.resources-brand-icon-factsheet {
+    border-radius: 4px;
+    background: repeating-linear-gradient(135deg, rgba(0, 126, 118, 0.15) 0 2px, transparent 2px 8px), rgba(164, 184, 172, 0.3);
+}
+
+.resources-brand-name {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #003854;
+}
+
+.resources-brand-desc {
+    font-size: 12px;
+    color: #566B75;
+    margin-top: 4px;
+}
+
+@media (max-width: 860px) {
+    .resources-brand-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Policies ---- */
+.resources-policies {
+    background: #F7FAF9;
+}
+
+.resources-policies-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-policy-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 4px;
+    border-bottom: 1px solid rgba(0, 56, 84, 0.12);
+    text-decoration: none;
+    color: inherit;
+    transition: padding-left 0.25s ease;
+}
+
+.resources-policy-item:hover {
+    padding-left: 8px;
+}
+
+.resources-policy-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.resources-policy-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.resources-policy-dot-red {
+    background: #A92724;
+}
+
+.resources-policy-dot-gray {
+    background: #A4B8AC;
+}
+
+.resources-policy-name {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #003854;
+}
+
+.resources-policy-pending {
+    font-style: italic;
+}
+
+.resources-policy-download {
+    font-size: 12px;
+    color: #566B75;
+}
+
+.resources-policy-status {
+    font-size: 12px;
+    color: #566B75;
+}
+
+@media (max-width: 640px) {
+    .resources-policy-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
+
+/* ---- Press Kit ---- */
+.resources-presskit {
+    background: #fff;
+}
+
+.resources-presskit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.resources-presskit-card {
+    background: #F7FAF9;
+    border: 1px solid rgba(0, 56, 84, 0.1);
+    border-radius: 4px;
+    padding: 26px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.resources-presskit-name {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    color: #003854;
+}
+
+.resources-presskit-desc {
+    font-size: 12.5px;
+    color: #566B75;
+    margin-top: 4px;
+}
+
+.resources-presskit-btn {
+    background: #003854;
+    color: #fff;
+    border: 1px solid #003854;
+    border-radius: 2px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 12.5px;
+    padding: 10px 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+}
+
+.resources-presskit-btn:hover {
+    background: #002A40;
+    border-color: #002A40;
+}
+
+.resources-presskit-btn-secondary {
+    background: #fff;
+    color: #003854;
+    border-color: #003854;
+}
+
+.resources-presskit-btn-secondary:hover {
+    background: #F7FAF9;
+}
+
+.resources-placeholder {
+    border: 1px dashed rgba(0, 56, 84, 0.2);
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin-top: 32px;
+}
+
+.resources-placeholder p {
+    font-size: 13px;
+    font-style: italic;
+    color: #566B75;
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .resources-presskit-grid {
+        grid-template-columns: 1fr;
+    }
+    .resources-presskit-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 860px) {
+    .resources-section:first-of-type {
+        padding-top: 60px;
+    }
+    .resources-section:last-of-type {
+        padding-bottom: 60px;
+    }
+    .resources-wrap {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .resources-hero h1 {
+        font-size: clamp(28px, 8vw, 38px);
+    }
+    .resources-hero-sub {
+        font-size: 14px;
+    }
+}

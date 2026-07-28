@@ -5,7 +5,7 @@
   <div class="news-header">
     <div>
       <div class="section-eyebrow fade-up">News &amp; Updates</div>
-      <h2 class="fade-up">Latest from<br><em>the campus</em></h2>
+      <h2 class="fade-up">Latest from<br><em class="text-white">the campus</em></h2>
     </div>
     <a href="#" class="news-all-link fade-up">All News &nbsp;→</a>
   </div>

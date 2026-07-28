@@ -370,7 +370,7 @@
 /* ---- Newsletter ---- */
 .contact-newsletter {
     padding: 80px 0;
-    background: #007E76;
+    background: var(--roha-trustworthy-navy);
 }
 
 .contact-newsletter-grid {

@@ -7,6 +7,10 @@
                 <div class="news-eyebrow">Gallery</div>
                 <h2>Photos, footage &amp; <em>brand assets</em></h2>
             </div>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="Photos and Videos.dc.html" style="display:inline-flex;align-items:center;gap:8px;background:#003854;color:#fff;border:1px solid #003854;border-radius:2px;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:12.5px;padding:11px 18px;text-decoration:none;white-space:nowrap;">View Full Gallery →</a>
+          <a href="Resources.dc.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#003854;border:1px solid #003854;border-radius:2px;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:12.5px;padding:11px 18px;text-decoration:none;white-space:nowrap;">All Resources →</a>
+        </div>
         </div>
 
         <!-- Events -->

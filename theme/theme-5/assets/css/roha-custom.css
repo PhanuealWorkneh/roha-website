@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
   letter-spacing: -0.02em;
   white-space: nowrap;
 }
-.logo span { color: var(--roha-structure); font-weight: 300; font-style: italic; font-family: 'Roboto Serif', serif; }
+.logo span { color: var(--roha-accent-yellow); font-weight: 300; font-style: italic; font-family: 'Roboto Serif', serif; }
 .right-nav { display:flex; align-items:center; gap:20px; }
 .nav-links {
   display: flex; align-items: center; gap: 28px;
@@ -219,24 +219,30 @@ h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
   pointer-events:none; z-index:1; opacity:0.5;
 }
-.slide-bg-0 { background: radial-gradient(ellipse 80% 60% at 65% 45%, #007E76 0%, #003854 40%, #080a0e 100%); }
-.slide-bg-0::after {
-  content:''; position:absolute; inset:0;
-  background: radial-gradient(ellipse 35% 50% at 5% 65%, rgba(110,20,160,.35) 0%, transparent 65%);
-  pointer-events:none; z-index:0;
+
+
+.slide-bg-0{
+
+  background: var(--roha-gradient-01);
+
 }
-.slide-bg-1 { background: radial-gradient(ellipse 70% 60% at 55% 50%, #007E76 0%, #003854 55%, #080a0e 100%); }
-.slide-bg-2 { background: radial-gradient(ellipse 75% 70% at 30% 55%, #003854 0%, #0a0616 60%, #080a0e 100%); }
-.slide-bg-2::after {
-  content:''; position:absolute; inset:0;
-  background: radial-gradient(ellipse 40% 50% at 80% 30%, rgba(0,126,118,.22) 0%, transparent 60%);
-  pointer-events:none; z-index:0;
+
+.slide-bg-1 {
+
+  background: var(--roha-gradient-02);
+
 }
-.slide-bg-3 { background: radial-gradient(ellipse 70% 65% at 60% 45%, #007E76 0%, #003854 55%, #080a0e 100%); }
-.slide-bg-3::after {
-  content:''; position:absolute; inset:0;
-  background: radial-gradient(ellipse 40% 60% at 10% 40%, rgba(100,15,170,.28) 0%, transparent 65%);
-  pointer-events:none; z-index:0;
+
+.slide-bg-2 {
+
+  background: var(--roha-gradient-03);
+
+}
+
+.slide-bg-3 {
+
+  background: var(--roha-gradient-04);
+
 }
 
 .hero-slide-content {
@@ -269,7 +275,7 @@ h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
   font-family: 'Roboto Serif', serif;
   font-weight: 300;
   font-style: italic;
-  color: var(--roha-structure);
+  color: var(--roha-accent-yellow);
 }
 .hero-sub {
   font-family: 'Roboto Serif', serif;
@@ -303,7 +309,7 @@ h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
 .arr-row span:nth-child(3) { animation-delay:.3s; opacity:.35; }
 @keyframes aBounce { 0%,100%{transform:rotate(-45deg) translate(0,0); opacity:1;} 50%{transform:rotate(-45deg) translate(4px,4px); opacity:.4;} }
 .arr-down { display:flex; flex-direction:column; align-items:center; gap:4px; }
-.arr-down span { display:block; width:6px; height:6px; border-right:2px solid var(--roha-structure); border-bottom:2px solid var(--roha-structure); transform:rotate(45deg); animation:aBounceD 1.4s ease-in-out infinite; }
+.arr-down span { display:block; width:20px; height:20px; border-right:5px solid #fff; border-bottom:5px solid #fff; transform:rotate(45deg); animation:aBounceD 1.4s ease-in-out infinite; }
 .arr-down span:nth-child(2) { animation-delay:.15s; opacity:.6; }
 .arr-down span:nth-child(3) { animation-delay:.3s; opacity:.35; }
 @keyframes aBounceD { 0%,100%{transform:rotate(45deg) translate(0,0); opacity:1;} 50%{transform:rotate(45deg) translate(0,4px); opacity:.4;} }
@@ -317,9 +323,9 @@ h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
 .hero-down-hint {
   position:absolute; right:clamp(24px,5vw,52px); bottom:80px;
   display:flex; flex-direction:column; align-items:center; gap:10px;
-  color:var(--roha-structure); font-family:'Poppins',sans-serif; font-size:9px;
+  color:#fff; font-family:'Poppins',sans-serif; font-size:12px;
   letter-spacing:2px; text-transform:uppercase;
-  cursor:pointer; z-index:15; transition: opacity 0.3s;
+  cursor:pointer; z-index:15; transition: opacity 0.5s;
 }
 .hero-down-hint:hover { opacity:0.7; }
 
@@ -338,7 +344,7 @@ h1, h2, h3, h4, h5, h6, .logo, .stat-number, .hero-slide-content h1 {
 }
 .hero-tl-fill {
   height:2px; border-radius:2px;
-  background: linear-gradient(90deg, var(--roha-structure), var(--roha-premium-accent));
+  background: var(--roha-gradient-primary);
   transition: width 0.5s cubic-bezier(0.77,0,0.175,1);
   position:absolute; left:0; top:0;
 }
@@ -411,7 +417,7 @@ h2 em {
   font-style: italic;
   font-family: 'Roboto Serif', serif;
   font-weight: 300;
-  color: var(--roha-structure);
+  color: var(--roha-accent-yellow);
 }
 .lead {
   font-family: 'Roboto Serif', serif;
@@ -510,7 +516,7 @@ h2 em {
 }
 .chapter-break-title em {
   font-style:italic; font-family:'Roboto Serif',serif;
-  font-weight:300; color:var(--roha-structure);
+  font-weight:300; color:var(--roha-primary-action);
 }
 
 /* ========== BUILDING / FEATURES ========== */
@@ -579,11 +585,6 @@ h2 em {
   border:1px solid rgba(255,255,255,0.08);
   padding:2.5rem; position:relative; overflow:hidden;
   margin-top:2rem;
-}
-.esg-forest-card::before {
-  content:''; position:absolute; inset:0;
-  background: radial-gradient(ellipse 80% 80% at 80% 80%, rgba(0,126,118,0.08), transparent);
-  pointer-events:none;
 }
 .tree-count {
   font-family:'Poppins',sans-serif; font-size:clamp(3rem,6vw,4.5rem);
@@ -708,7 +709,7 @@ h2 em {
 }
 .newsletter h2 em {
   font-family:'Roboto Serif',serif; font-style:italic;
-  font-weight:300; color:var(--roha-structure);
+  font-weight:300; color:var(--roha-accent-yellow);
 }
 .newsletter p {
   font-family:'Roboto Serif',serif; font-size:0.95rem;
@@ -870,7 +871,7 @@ footer {
    ROHA HEALTH BRAND OVERRIDES
    Healing Teal as the main structure/background colour.
    Trustworthy Navy as the main action colour.
-   Gradients follow the supplied Roha colour-band guideline.
+   Only THREE gradients are used across the whole theme.
    ========================================================= */
 
 :root {
@@ -901,11 +902,22 @@ footer {
   --roha-body-text: #566B75;
   --roha-dark-text: #003854;
 
-  /* Guideline gradients */
+  /* THE ONLY 3 GRADIENTS IN THIS THEME */
   --roha-gradient-primary: linear-gradient(90deg, #007E76 0%, #005B66 52%, #501195 100%);
   --roha-gradient-bright: linear-gradient(90deg, #6BD87B 0%, #0075A8 52%, #6B46B7 100%);
-  --roha-gradient-calm: linear-gradient(90deg, #4EC7BE 0%, #007E76 52%, #003854 100%);
   --roha-gradient-hero: linear-gradient(120deg, #007E76 0%, #005B66 42%, #0075A8 68%, #501195 100%);
+
+  --roha-gradient-01:
+    radial-gradient(circle at 88% 0%, #65AF49 0%, rgba(101, 175, 73, 0) 30%),
+    linear-gradient(135deg, #005B6E 0%, #007E76 35%, #009A54 58%, #005579 100%);
+  --roha-gradient-02:
+    linear-gradient(45deg, #005062 0%, #174A7C 38%, #392987 68%, #581B9C 100%);
+  --roha-gradient-03:
+    radial-gradient(circle at 62% 15%, rgba(0, 126, 118, 0.95) 0%, rgba(0, 126, 118, 0) 55%),
+    linear-gradient(135deg, #264981 0%, #21587D 48%, #501195 100%);
+  --roha-gradient-04:
+    radial-gradient(circle at 47% 45%, rgba(0, 126, 118, 0.95) 0%, rgba(0, 126, 118, 0) 52%),
+    linear-gradient(90deg, #313B86 0%, #005B66 35%, #215B7B 70%, #501195 100%);
 }
 
 body {
@@ -913,10 +925,10 @@ body {
   color: rgba(255,255,255,0.86);
 }
 
-/* Header: Healing Teal structure */
+/* Header: gradient 1 (primary) */
 .navbar,
 .navbar.scrolled {
-  background: rgba(0, 126, 118, 0.97);
+  background: var(--roha-gradient-primary);
   border-bottom: 1px solid rgba(255,255,255,0.14);
 }
 
@@ -944,11 +956,11 @@ body {
   background: var(--roha-soothing-cream);
 }
 
-/* Primary actions: Trustworthy Navy */
+/* Primary actions: Trustworthy Navy, no gradient */
 .btn-primary,
 .newsletter-form button,
 .preview-contact-btn {
-  background: var(--roha-trustworthy-navy);
+  background: var(--roha-healing-teal);
   border-color: var(--roha-trustworthy-navy);
   color: #FFFFFF;
 }
@@ -956,38 +968,40 @@ body {
 .btn-primary:hover,
 .newsletter-form button:hover,
 .preview-contact-btn:hover {
-  background: #002B41;
-  border-color: #002B41;
+  background: var(--roha-healing-teal);
+  border-color: var(--roha-healing-teal);
   color: #FFFFFF;
 }
 
-/* Hero gradients from the supplied guideline */
+/* Hero: gradient 3 (hero) used everywhere in the hero, no per-slide variants */
 .h-hero-wrapper {
-  background: var(--roha-gradient-hero);
+  /* background: var(--roha-gradient-hero); */
 }
 
-.slide-bg-0 {
-  background: var(--roha-gradient-primary);
+
+
+.slide-bg-0{
+
+  background: var(--roha-gradient-01);
+
 }
 
 .slide-bg-1 {
-  background: var(--roha-gradient-bright);
+
+  background: var(--roha-gradient-02);
+
 }
 
 .slide-bg-2 {
-  background: var(--roha-gradient-calm);
+
+  background: var(--roha-gradient-03);
+
 }
 
 .slide-bg-3 {
-  background:
-    radial-gradient(ellipse 60% 70% at 12% 85%, rgba(233,243,158,0.16) 0%, transparent 58%),
-    var(--roha-gradient-hero);
-}
 
-.slide-bg-0::after,
-.slide-bg-2::after,
-.slide-bg-3::after {
-  opacity: 0.35;
+  background: var(--roha-gradient-04);
+
 }
 
 .hero-slide-content h1,
@@ -997,6 +1011,9 @@ body {
   color: #FFFFFF;
 }
 
+.hero-slide-content h1 em{
+  color: var(--roha-soothing-cream);
+}
 .hero-timeline {
   background: linear-gradient(to top, rgba(0,126,118,.88) 0%, transparent 100%);
 }
@@ -1014,44 +1031,25 @@ body {
   box-shadow: 0 0 0 4px rgba(255,255,255,.22);
 }
 
-/* Most large page backgrounds: Healing Teal, with white cards for readability */
+/* Most large page backgrounds: gradient 1 (primary) */
 .stats-bar,
 .mission,
 .building,
 .milestones,
-.preview-section {
-  background: var(--roha-healing-teal);
-  color: #FFFFFF;
-}
-
+.preview-section,
 .news {
-  background: linear-gradient(180deg, #007E76 0%, #006E68 100%);
+  background: var(--roha-gradient-primary);
   color: #FFFFFF;
 }
 
 .esg,
 .newsletter,
 footer {
-  background: var(--roha-healing-teal);
+  background: var(--roha-trustworthy-navy);
   color: rgba(255,255,255,0.82);
 }
 
-footer {
-  background:
-    radial-gradient(ellipse 70% 90% at 100% 100%, rgba(80,17,149,0.18) 0%, transparent 58%),
-    var(--roha-footer-bg);
-}
-
 /* Teal sections need white headings; white cards keep teal headlines */
-.mission > *,
-.building > *,
-.milestones > *,
-.preview-section > *,
-.news > * {
-  position: relative;
-  z-index: 1;
-}
-
 .mission h2,
 .building h2,
 .milestones h2,
@@ -1072,7 +1070,16 @@ footer {
 .milestones .section-eyebrow::before,
 .preview-section .section-eyebrow::before,
 .news .section-eyebrow::before {
-  background: #FFFFFF;
+  background: var(--roha-accent-yellow);
+}
+
+/* On the primary gradient (which shifts toward purple), the eyebrow accent
+   colour and stat numbers shift to cream/yellow for contrast at every stop */
+.section-eyebrow,
+.stat-number,
+.pillar-num,
+.tree-count {
+  color: var(--roha-accent-yellow);
 }
 
 .lead,
@@ -1082,7 +1089,7 @@ footer {
   color: rgba(255,255,255,0.78);
 }
 
-/* Readability cards */
+/* Readability cards: flat white, no gradient */
 .mission-card.accent,
 .feature-cell,
 .news-card,
@@ -1139,11 +1146,9 @@ footer {
   color: #FFFFFF;
 }
 
-/* Chapter breaks can use the calm gradient sparingly */
+/* Chapter break: flat cream-soft, no gradient */
 .chapter-break {
-  background:
-    linear-gradient(90deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.91) 100%),
-    var(--roha-gradient-calm);
+  background: var(--roha-section-soft);
 }
 
 .chapter-break-number {
@@ -1190,7 +1195,7 @@ footer .footer-col ul li a,
   border-color: rgba(255,255,255,0.16);
 }
 
-/* Sidebar stays action-led in Trustworthy Navy */
+/* Sidebar stays action-led in Trustworthy Navy, flat */
 .sidebar-offcanvas {
   background: var(--roha-trustworthy-navy);
 }

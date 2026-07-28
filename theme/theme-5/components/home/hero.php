@@ -12,9 +12,8 @@
           </div>
 
           <h1 class="hero-s-in d1">
-            Roha Health Ethiopia<br>
-            is <em>a new chapter</em><br>
-            for healthcare in Africa.
+            Roha Advanced Multi-Specialty Hospital:<br>
+            <em>a new chapter for healthcare in Africa.</em>
           </h1>
 
           <p class="hero-sub hero-s-in d2">
@@ -41,9 +40,9 @@
           </div>
 
           <h1 class="hero-s-in d1">
-            Setting a new benchmark<br>
-            for <em>specialized &amp; comprehensive care</em><br>
-            across Ethiopia and Africa.
+           Setting a new benchmark for specialized, comprehensive care in <br>
+            for <em>Ethiopia and beyond.</em><br>
+            
           </h1>
 
           <p class="hero-sub hero-s-in d2">
@@ -64,7 +63,7 @@
 
           <h1 class="hero-s-in d1">
             Clinical excellence<br>
-            powered by <em style="color:var(--gl);">advanced technology</em><br>
+            powered by <em style="color:#fffffff5;">advanced technology</em><br>
             and precision medicine.
           </h1>
 
@@ -85,7 +84,7 @@
           </div>
 
           <h1 class="hero-s-in d1">
-           Delivering  <br/> <em style="color:var(--gl);"> trusted, evidence-based,  safe, and innovative care </em>
+           Delivering  <br/> <em style="color: #fffffff5;"> trusted, evidence-based,  safe, and innovative care </em>
             <h4 class="text-white">through collaboration, empowered teams, patient dignity, sustainability, and inclusive, equitable health for all.</span></p>
           </h1>
 

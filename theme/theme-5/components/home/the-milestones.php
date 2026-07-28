@@ -334,7 +334,7 @@
             </div> -->
 
             <h2>
-                Watch how the facility has <em>advanced </em>
+                Watch how the facility has <em style="color: var(--roha-premium-accent);">advanced </em>
             </h2>
 
             <p class="lead">

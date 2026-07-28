@@ -6,7 +6,7 @@
     <div class="chapter-break-label" style="color:var(--sage);">A Hospital &amp; A Force for Good</div>
     <div class="chapter-break-title" style="color:white;">
       Healthcare that creates<br>
-      a <em>lasting positive impact.</em>
+      a <em style="color: var(--roha-accent-yellow);">lasting positive impact.</em>
     </div>
   </div>
 </div>
@@ -23,10 +23,10 @@
 
       <h2 class="fade-up" style="color:white;">
         A hospital that cares for<br>
-        <em>patients and community.</em>
+        <em style="color: #fff;">patients and community.</em>
       </h2>
 
-      <p class="lead fade-up">
+      <p class="lead fade-up text-white">
         Roha is dedicated to being a leading responsible healthcare provider, operating as a steward of people, nature, and systems to create a surplus of good for our patients, our communities, and the environment.
       </p>
 
@@ -39,7 +39,7 @@
 
         <h3>Ethiopia's First Green Hospital</h3>
 
-        <p>
+        <p class="text-white">
           Roha Health Ethiopia's Advanced Multispecialty Hospital has been awarded IFC's EDGE Design Certificate. Its environment-first design reduces energy consumption by <strong>35%</strong>, embodied material energy by <strong>24%</strong>, and water usage by <strong>21%</strong> compared with conventional hospitals.
         </p>
 

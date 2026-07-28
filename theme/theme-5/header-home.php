@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Roha Medical Campus — A New Chapter for Healthcare in Africa</title>
-
+<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icons.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;1,8..144,100;1,8..144,300;1,8..144,400&display=swap" rel="stylesheet">
 
 <!-- bootstrap CSS -->
@@ -43,8 +44,10 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 <!-- Custom Roha Style CSS -->
 <link rel="stylesheet" href="assets/css/roha-custom.css?v=1.11" type="text/css" media="all">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
-<body>
+<body style="background: #fffffff5;">
 <!-- ========== NAVBAR ========== -->
 <nav class="navbar" id="mainNavbar">
   <div class="logo"><a class="active_header" href="./"><img src="assets/images/roha logo-01.png" alt="logo" height="45px"></a></div>

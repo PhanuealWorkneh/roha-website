@@ -588,7 +588,7 @@
 /* ---- Newsletter ---- */
 .news-newsletter {
     padding: 80px 0;
-    background: #007E76;
+    background: var(--roha-trustworthy-navy);
 }
 
 .news-newsletter-grid {
@@ -709,5 +709,225 @@
 @media (max-width: 640px) {
     .news-hero h1 {
         font-size: clamp(28px, 8vw, 38px);
+    }
+}
+
+/* ============================================================
+   GALLERY SECTION (within News & Media page)
+   ============================================================ */
+
+/* ---- Gallery Section Head ---- */
+.news-sec-head {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 40px;
+    margin-bottom: 56px;
+    align-items: end;
+}
+
+.news-sec-num {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 80px;
+    line-height: 1;
+    -webkit-text-stroke: 1px #007E76;
+    color: transparent;
+    font-weight: 600;
+}
+
+.news-sec-head h2 {
+    margin: 0;
+    font-size: clamp(26px, 3.2vw, 40px);
+    line-height: 1.18;
+    color: #007E76;
+}
+
+.news-sec-head h2 em {
+    font-style: italic;
+    color: #007E76;
+}
+
+/* ---- Gallery Groups ---- */
+.news-gallery-group {
+    margin-bottom: 48px;
+}
+
+.news-gallery-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.news-gallery-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.news-gallery-group-label {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #007E76;
+}
+
+.news-gallery-group-sub {
+    font-size: 12px;
+    color: #566B75;
+}
+
+.news-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+/* ---- Gallery Items ---- */
+.news-gallery-item {
+    aspect-ratio: 4/3;
+    border-radius: 2px;
+    background: repeating-linear-gradient(135deg, rgba(0, 126, 118, 0.08) 0 2px, transparent 2px 16px), rgba(164, 184, 172, 0.28);
+    border: 1px solid rgba(0, 56, 84, 0.12);
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+}
+
+.news-gallery-item span {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #566B75;
+}
+
+.news-gallery-item-dark {
+    background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0 2px, transparent 2px 16px), #003854;
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.news-gallery-item-dark span {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.news-gallery-add {
+    border: 1px dashed rgba(0, 56, 84, 0.25);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #A4B8AC;
+}
+
+.news-gallery-add span {
+    font-size: 20px;
+    color: #A4B8AC;
+    text-transform: none;
+}
+
+/* ---- Logo Items ---- */
+.news-gallery-logo {
+    aspect-ratio: 4/3;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid rgba(0, 56, 84, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.news-gallery-logo span {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #566B75;
+}
+
+.news-logo-mark {
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid #003854;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-logo-mark::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #007E76;
+    border-radius: 1px;
+    transform: rotate(45deg);
+}
+
+.news-logo-mark-white {
+    border-color: #fff;
+}
+
+.news-logo-mark-white::after {
+    background: #F6F222;
+}
+
+.news-gallery-logo-dark {
+    background: #003854;
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.news-gallery-logo-dark span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.news-logo-wordmark {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #003854;
+}
+
+.news-gallery-logo-wordmark span:last-child {
+    color: #566B75;
+}
+
+/* ---- Gallery Note ---- */
+.news-gallery-note {
+    border: 1px dashed rgba(0, 56, 84, 0.2);
+    border-radius: 4px;
+    padding: 18px 22px;
+    margin-top: 36px;
+}
+
+.news-gallery-note p {
+    font-size: 13px;
+    font-style: italic;
+    color: #566B75;
+    margin: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 860px) {
+    .news-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .news-sec-head {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .news-sec-num {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 560px) {
+    .news-gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .news-gallery-group-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
     }
 }
