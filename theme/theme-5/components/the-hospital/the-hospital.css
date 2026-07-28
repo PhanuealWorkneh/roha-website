@@ -361,3 +361,55 @@ button:hover{
 }
 
 /* .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;} */
+
+/* ===== NEW REDESIGN STYLES ===== */
+
+.pillar-icon {
+  font-size: 2rem;
+  color: var(--roha-healing-teal);
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.pillar:hover .pillar-icon {
+  transform: translateY(-5px);
+  color: var(--roha-trustworthy-navy);
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-on-dark);
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.stat-box:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.green-features-grid .pillar {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ink);
+}
+
+.visual-logos .partner {
+  background: transparent;
+  border: 1px dashed rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.visual-logos .partner:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.visual-logos .partner img {
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.visual-logos .partner:hover img {
+  opacity: 1 !important;
+  filter: grayscale(0%) !important;
+}

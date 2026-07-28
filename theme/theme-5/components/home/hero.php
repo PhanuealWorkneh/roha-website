@@ -5,6 +5,8 @@
 
       <!-- Slide 1 -->
       <div class="h-hero-slide slide-bg-0 active" data-index="0">
+        <!-- Video Placeholder for Motion Graphics -->
+        <!-- <video autoplay loop muted playsinline class="hero-video-bg"><source src="assets/videos/hero-1.mp4" type="video/mp4"></video> -->
         <div class="hero-slide-content">
           <div class="hero-chapter hero-s-in">
             <span class="hero-chapter-line"></span>
@@ -12,8 +14,8 @@
           </div>
 
           <h1 class="hero-s-in d1">
-            Roha Health Ethiopia<br>
-            is <em>a new chapter</em><br>
+            Roha Advanced Multi-Specialty Hospital:<br>
+            <em>a new chapter</em><br>
             for healthcare in Africa.
           </h1>
 
@@ -34,6 +36,8 @@
 
       <!-- Slide 2 -->
       <div class="h-hero-slide slide-bg-1" data-index="1">
+        <!-- Video Placeholder for Motion Graphics -->
+        <!-- <video autoplay loop muted playsinline class="hero-video-bg"><source src="assets/videos/hero-2.mp4" type="video/mp4"></video> -->
         <div class="hero-slide-content">
           <div class="hero-chapter hero-s-in">
             <span class="hero-chapter-line"></span>
@@ -43,7 +47,7 @@
           <h1 class="hero-s-in d1">
             Setting a new benchmark<br>
             for <em>specialized &amp; comprehensive care</em><br>
-            across Ethiopia and Africa.
+            in Ethiopia and beyond.
           </h1>
 
           <p class="hero-sub hero-s-in d2">
@@ -64,8 +68,8 @@
 
           <h1 class="hero-s-in d1">
             Clinical excellence<br>
-            powered by <em style="color:var(--gl);">advanced technology</em><br>
-            and precision medicine.
+            through evidence-based practice,<br>
+            powered by<em style="color:var(--gl);">advanced technology.</em><br>
           </h1>
 
           <p class="hero-sub hero-s-in d2">
@@ -85,8 +89,8 @@
           </div>
 
           <h1 class="hero-s-in d1">
-           Delivering  <br/> <em style="color:var(--gl);"> trusted, evidence-based,  safe, and innovative care </em>
-            <h4 class="text-white">through collaboration, empowered teams, patient dignity, sustainability, and inclusive, equitable health for all.</span></p>
+           Delivering  <br/> <em style="color:var(--gl);"> trusted, compassionate, and inclusive care </em>
+            <h4 class="text-white"> — for every patient, every community.</span></p>
           </h1>
 
           <p class="hero-sub hero-s-in d2">

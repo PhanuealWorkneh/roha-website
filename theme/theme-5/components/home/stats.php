@@ -2,7 +2,7 @@
 <div class="stats-bar" style="padding: 80px 0px 80px;">
   
   <div class="stat-item fade-up">
-    <span class="stat-number">300</span>
+    <span class="stat-number">300+</span>
     <span class="stat-label">Hospital Beds</span>
   </div>
 
@@ -12,7 +12,7 @@
   </div>
 
   <div class="stat-item fade-up fade-up-delay-2">
-    <span class="stat-number">$110M</span>
+    <span class="stat-number">$110 million</span>
     <span class="stat-label">Investment in Healthcare</span>
   </div>
 
