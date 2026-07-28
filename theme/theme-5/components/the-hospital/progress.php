@@ -1,6 +1,7 @@
 <section class="progress section">
     <div class="wrap">
         <div class="progress-inner">
+            <div class="sec-num">03</div>
             <div class="intro-lede">Project progress</div>
             <h2>Updated milestone and <em>timeline</em></h2>
             <div class="placeholder-box">

@@ -77,13 +77,13 @@
     <button class="close-sidebar" id="closeSidebarBtn">×</button>
   </div>
   <ul class="sidebar-menu">
-    <li><a href="#top">Home</a></li>
-    <li><a href="#mission">Our Mission</a></li>
-    <li><a href="#building">The Campus</a></li>
-    <li><a href="#esg">ESG &amp; Sustainability</a></li>
-    <li><a href="#milestones">Milestones</a></li>
-    <li><a href="#news">Newsroom</a></li>
-    <li><a href="#contact">Contact &amp; Newsletter</a></li>
+    <a href="./">Home</a>
+   <a href="about-roha.php">About Roha</a>
+      <a href="the-hospital.php">The Hospital</a>
+      <a href="services.php">Services</a>
+      <a href="esg-sustainability.php">ESG & Sustainability </a>
+      <a href="news-media.php">News & Media </a>
+      <a href="contact-us.php">Contact Us</a>
   </ul>
   <div class="sidebar-contact d-none">
     <p><i class="fas fa-map-marker-alt"></i> 379 Cape Verde Street, A4 Building, 6th Floor, Addis Ababa</p>

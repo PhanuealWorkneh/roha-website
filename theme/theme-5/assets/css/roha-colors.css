@@ -1,0 +1,280 @@
+/* =========================================================
+   ROHA TEXT COLOR UTILITIES
+   Usage: class="text-yellow"
+   ========================================================= */
+
+.text-roha-structure {
+  color: var(--roha-structure) !important;
+}
+
+.text-roha-headline {
+  color: var(--roha-headline) !important;
+}
+
+.text-primary-action {
+  color: var(--roha-primary-action) !important;
+}
+
+.text-primary-action-hover {
+  color: var(--roha-primary-action-hover) !important;
+}
+
+.text-link {
+  color: var(--roha-link) !important;
+}
+
+.text-premium-accent {
+  color: var(--roha-premium-accent) !important;
+}
+
+.text-background {
+  color: var(--roha-background) !important;
+}
+
+.text-section-soft {
+  color: var(--roha-section-soft) !important;
+}
+
+.text-warm-tint {
+  color: var(--roha-warm-tint) !important;
+}
+
+.text-body {
+  color: var(--roha-body-text) !important;
+}
+
+.text-dark {
+  color: var(--roha-dark-text) !important;
+}
+
+.text-yellow {
+  color: var(--roha-accent-yellow) !important;
+}
+
+.text-orange {
+  color: var(--roha-accent-orange) !important;
+}
+
+.text-ruby {
+  color: var(--roha-accent-ruby) !important;
+}
+
+
+/* Legacy color utilities */
+
+.text-forest {
+  color: var(--forest) !important;
+}
+
+.text-forest-mid {
+  color: var(--forest-mid) !important;
+}
+
+.text-forest-light {
+  color: var(--forest-light) !important;
+}
+
+.text-sage {
+  color: var(--sage) !important;
+}
+
+.text-sage-light {
+  color: var(--sage-light) !important;
+}
+
+.text-cream {
+  color: var(--cream) !important;
+}
+
+.text-cream-dark {
+  color: var(--cream-dark) !important;
+}
+
+.text-warm-white {
+  color: var(--warm-white) !important;
+}
+
+.text-gold {
+  color: var(--gold) !important;
+}
+
+.text-gold-light {
+  color: var(--gold-light) !important;
+}
+
+.text-charcoal {
+  color: var(--charcoal) !important;
+}
+
+.text-mid {
+  color: var(--text-mid) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.text-green {
+  color: var(--green) !important;
+}
+
+.text-gl {
+  color: var(--gl) !important;
+}
+
+.text-pl {
+  color: var(--pl) !important;
+}
+
+.text-black {
+  color: var(--black) !important;
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.text-muted-transparent {
+  color: var(--muted) !important;
+}
+
+
+/* =========================================================
+   ROHA BACKGROUND COLOR UTILITIES
+   Usage: class="bg-yellow"
+   ========================================================= */
+
+.bg-roha-structure {
+  background-color: var(--roha-structure) !important;
+}
+
+.bg-roha-headline {
+  background-color: var(--roha-headline) !important;
+}
+
+.bg-primary-action {
+  background-color: var(--roha-primary-action) !important;
+}
+
+.bg-primary-action-hover {
+  background-color: var(--roha-primary-action-hover) !important;
+}
+
+.bg-link {
+  background-color: var(--roha-link) !important;
+}
+
+.bg-premium-accent {
+  background-color: var(--roha-premium-accent) !important;
+}
+
+.bg-background {
+  background-color: var(--roha-background) !important;
+}
+
+.bg-section-soft {
+  background-color: var(--roha-section-soft) !important;
+}
+
+.bg-warm-tint {
+  background-color: var(--roha-warm-tint) !important;
+}
+
+.bg-body {
+  background-color: var(--roha-body-text) !important;
+}
+
+.bg-dark {
+  background-color: var(--roha-dark-text) !important;
+}
+
+.bg-yellow {
+  background-color: var(--roha-accent-yellow) !important;
+}
+
+.bg-orange {
+  background-color: var(--roha-accent-orange) !important;
+}
+
+.bg-ruby {
+  background-color: var(--roha-accent-ruby) !important;
+}
+
+
+/* Legacy background utilities */
+
+.bg-forest {
+  background-color: var(--forest) !important;
+}
+
+.bg-forest-mid {
+  background-color: var(--forest-mid) !important;
+}
+
+.bg-forest-light {
+  background-color: var(--forest-light) !important;
+}
+
+.bg-sage {
+  background-color: var(--sage) !important;
+}
+
+.bg-sage-light {
+  background-color: var(--sage-light) !important;
+}
+
+.bg-cream {
+  background-color: var(--cream) !important;
+}
+
+.bg-cream-dark {
+  background-color: var(--cream-dark) !important;
+}
+
+.bg-warm-white {
+  background-color: var(--warm-white) !important;
+}
+
+.bg-gold {
+  background-color: var(--gold) !important;
+}
+
+.bg-gold-light {
+  background-color: var(--gold-light) !important;
+}
+
+.bg-charcoal {
+  background-color: var(--charcoal) !important;
+}
+
+.bg-mid {
+  background-color: var(--text-mid) !important;
+}
+
+.bg-text-muted {
+  background-color: var(--text-muted) !important;
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+}
+
+.bg-gl {
+  background-color: var(--gl) !important;
+}
+
+.bg-pl {
+  background-color: var(--pl) !important;
+}
+
+.bg-black {
+  background-color: var(--black) !important;
+}
+
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.bg-muted {
+  background-color: var(--muted) !important;
+}

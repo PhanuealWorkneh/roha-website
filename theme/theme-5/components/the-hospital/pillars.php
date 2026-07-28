@@ -4,7 +4,7 @@
             <div class="sec-num">01</div>
             <div>
                 <div class="sec-lede">Design philosophy</div>
-                <h2>Five pillars shaping the <em>hospital</em></h2>
+                <h2>Five pillars shaping the <em class="text-yellow">hospital</em></h2>
             </div>
         </div>
         <div class="pillar-grid">
